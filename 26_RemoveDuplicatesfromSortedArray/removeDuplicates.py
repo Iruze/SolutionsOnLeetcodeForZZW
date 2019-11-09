@@ -13,3 +13,14 @@ class Solution:
                     pre += 1
                     nums[pre] = nums[i]
         return pre + 1 if nums else 0
+
+""" solution 2:
+class Solution:
+def removeDuplicates(self, nums: List[int]) -> int:
+    idx = 0
+    for num in nums:
+        if idx < 1 or nums[idx - 1] != num:
+            nums[idx] = num
+            idx += 1
+    return idx
+"""
