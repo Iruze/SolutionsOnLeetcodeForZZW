@@ -55,7 +55,7 @@
 
 ### 数组中的动态规划/贪心
 - [718.最长重复子数组](https://leetcode-cn.com/problems/maximum-length-of-repeated-subarray/)
-- [1143.最长公共子序列](https://leetcode-cn.com/problems/longest-common-subsequence/)
+- [1143.最长公共子序列](https://leetcode-cn.com/problems/longest-common-subsequence/)     
 其他动态：
 - [55.跳跃游戏](https://leetcode-cn.com/problems/jump-game/)
 - [45.跳跃游戏 II](https://leetcode-cn.com/problems/jump-game-ii/)
