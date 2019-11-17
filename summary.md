@@ -121,6 +121,12 @@
 - [741.买卖股票的最佳时机含手续费](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)
 - [309.最佳买卖股票时机含冷冻期](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)
 
+### Fibonacci数组
+- [509.斐波那契数](https://leetcode-cn.com/problems/fibonacci-number/submissions/)
+- [70.爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)
+- [842.将数组拆分成斐波那契序列](https://leetcode-cn.com/problems/split-array-into-fibonacci-sequence/)
+- [873.最长的斐波那契子序列的长度](https://leetcode-cn.com/problems/length-of-longest-fibonacci-subsequence/)
+
 ### 其他数组用法
 - [945.使数组唯一的最小增量](https://leetcode-cn.com/problems/minimum-increment-to-make-array-unique/)
 - [66.加一](https://leetcode-cn.com/problems/plus-one/)
