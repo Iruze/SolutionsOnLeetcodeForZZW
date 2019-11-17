@@ -96,3 +96,10 @@
 
 ### 其他数组用法
 - 945.使数组唯一的最小增量
+
+# 动态规划
+### 二维数组-最小路径/最大礼物价值/
+- [64.最小路径和](https://leetcode-cn.com/problems/minimum-path-sum/)
+- [62.不同路径](https://leetcode-cn.com/problems/unique-paths/)
+- [63.不同路径 II](https://leetcode-cn.com/problems/unique-paths-ii/)
+- [980.不同路径 III](https://leetcode-cn.com/problems/unique-paths-iii/)
