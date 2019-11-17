@@ -1,9 +1,9 @@
 # 数组
 ### 双指针
-- 1.两数之和
+- [1.两数之和](https://leetcode-cn.com/problems/two-sum/)
 - [167.两数之和 II - 输入有序数组](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/)
-- 15.三数之和
-- 18.四数之和
+- [15.三数之和](https://leetcode-cn.com/problems/3sum/)
+- [18.四数之和](https://leetcode-cn.com/problems/4sum/)
 - [16.最接近的三数之和](https://leetcode-cn.com/problems/3sum-closest/)
 - [259.较小的三数之和](https://leetcode-cn.com/problems/3sum-smaller/)
 - [1099.小于 K 的两数之和](https://leetcode-cn.com/problems/two-sum-less-than-k/)
@@ -25,7 +25,7 @@
 - [354.俄罗斯套娃信封问题](https://leetcode-cn.com/problems/russian-doll-envelopes/)
 
 ### 区间加减法
-- 795.区间子数组个数
+- [795.区间子数组个数](https://leetcode-cn.com/problems/number-of-subarrays-with-bounded-maximum/)
 
 ### 矩阵搜索/置零/横纵标记
 - [74.搜索二维矩阵](https://leetcode-cn.com/problems/search-a-2d-matrix/)
@@ -33,68 +33,69 @@
 - [73.矩阵置零](https://leetcode-cn.com/problems/set-matrix-zeroes/)
 ### 二分查找
 - [34.在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
+
 ### 众数
-- 169.求众数
-- 229.求众数II
+- [169.求众数](https://leetcode-cn.com/problems/majority-element/)
+- [229.求众数II](https://leetcode-cn.com/problems/majority-element-ii/)
 
 ### 最大矩形/接雨水/柱状图中最大矩形
-- 42.接雨水
-- 407.接雨水II
-- 11.盛最多水的容器
-- 84.柱状图中的最大矩形
-- 85.最大矩形
-- 221.最大正方形
+- [42.接雨水](https://leetcode-cn.com/problems/trapping-rain-water/)
+- [407.接雨水II](https://leetcode-cn.com/problems/trapping-rain-water-ii/)
+- [11.盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/)
+- [84.柱状图中的最大矩形](https://leetcode-cn.com/problems/largest-rectangle-in-histogram/)
+- [85.最大矩形](https://leetcode-cn.com/problems/maximal-rectangle/)
+- [221.最大正方形](https://leetcode-cn.com/problems/maximal-square/)
 
 
 ### 求和/积不超过（等于）k/最大的连续子数组的个数
-- 53.最大子序和
-- 560.和为K的子数组
-- 713.乘积小于K的子数组
-- 581.最短无序连续子数组
+- [53.最大子序和](https://leetcode-cn.com/problems/maximum-subarray/)
+- [560.和为K的子数组](https://leetcode-cn.com/problems/subarray-sum-equals-k/)
+- [713.乘积小于K的子数组](https://leetcode-cn.com/problems/subarray-product-less-than-k/)
+- [581.最短无序连续子数组](https://leetcode-cn.com/problems/shortest-unsorted-continuous-subarray/)
 
 ### 数组中的动态规划/贪心
-- 718.最长重复子数组
-- 1143.最长公共子序列   
+- [718.最长重复子数组](https://leetcode-cn.com/problems/maximum-length-of-repeated-subarray/)
+- [1143.最长公共子序列](https://leetcode-cn.com/problems/longest-common-subsequence/)
 其他动态：
-- 55.跳跃游戏
-- 45.跳跃游戏 II
-- 873.最长的斐波那契子序列的长度
+- [55.跳跃游戏](https://leetcode-cn.com/problems/jump-game/)
+- [45.跳跃游戏 II](https://leetcode-cn.com/problems/jump-game-ii/)
+- [873.最长的斐波那契子序列的长度](https://leetcode-cn.com/problems/length-of-longest-fibonacci-subsequence/)
 - [717.1比特与2比特字符](https://leetcode-cn.com/problems/1-bit-and-2-bit-characters/)
 
 ### 数组嵌套、数组中重复的数
-- 565.数组嵌套
-- 442.数组中重复的数据
-- 448.找到所有数组中消失的数字
-- 287.寻找重复数
--268.缺失数字
+- [565.数组嵌套](https://leetcode-cn.com/problems/array-nesting/)
+- [442.数组中重复的数据](https://leetcode-cn.com/problems/find-all-duplicates-in-an-array/)
+- [448.找到所有数组中消失的数字](https://leetcode-cn.com/problems/find-all-numbers-disappeared-in-an-array/)
+- [287.寻找重复数](https://leetcode-cn.com/problems/find-the-duplicate-number/)
+- [268.缺失数字](https://leetcode-cn.com/problems/missing-number/)
 
 ### 位运算/异或
-- 136.只出现一次的数字
-- 137.只出现一次的数字II
-- 260.只出现一次的数字III
+- [136.只出现一次的数字](https://leetcode-cn.com/problems/single-number/)
+- [137.只出现一次的数字II](https://leetcode-cn.com/problems/single-number-ii/)
+- [260.只出现一次的数字III](https://leetcode-cn.com/problems/single-number-iii/)
 
 ### 存在/删除数组中重复元素
 - [27.移除元素](https://leetcode-cn.com/problems/remove-element/)
-- 26.删除排序数组中的重复项
-- 80.删除排序数组中的重复项 II
-- 217.存在重复元素
-- 219.存在重复元素II
-- 220.存在重复元素 III
+- [26.删除排序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/)
+- [80.删除排序数组中的重复项 II](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array-ii/)
+- [217.存在重复元素](https://leetcode-cn.com/problems/contains-duplicate/)
+- [219.存在重复元素II](https://leetcode-cn.com/problems/contains-duplicate-ii/)
+- [220.存在重复元素 III](https://leetcode-cn.com/problems/contains-duplicate-iii/)
 
 ### 排序/第k大的元素（partition函数）
-- 88.合并两个有序数组（归并排序）
-- 912.排序数组 （快排）
+- [88.合并两个有序数组（归并排序）](https://leetcode-cn.com/problems/merge-sorted-array/)
+- [912.排序数组 （快排）](https://leetcode-cn.com/problems/sort-an-array/)
 - [414.第三大的数](https://leetcode-cn.com/problems/third-maximum-number/)
 - [215.数组中的第K个最大元素](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/)
 
 ### 矩阵打印
-- 54.螺旋矩阵
-- 59.螺旋矩阵 II
+- [54.螺旋矩阵](https://leetcode-cn.com/problems/spiral-matrix/)
+- [59.螺旋矩阵 II](https://leetcode-cn.com/problems/spiral-matrix-ii/)
 
 ### 数组奇偶摆放，摆动排序
-- 905.按奇偶排序数组
-- 376.摆动序列
-- 324.摆动排序II
+- [905.按奇偶排序数组](https://leetcode-cn.com/problems/sort-array-by-parity/)
+- [376.摆动序列](https://leetcode-cn.com/problems/wiggle-subsequence/)
+- [324.摆动排序 II](https://leetcode-cn.com/problems/wiggle-sort-ii/)
 - [162.寻找峰值](https://leetcode-cn.com/problems/find-peak-element/)
 
 ### 旋转数组
@@ -108,18 +109,20 @@
 - [48.旋转图像](https://leetcode-cn.com/problems/rotate-image/)
 - [867.转置矩阵](https://leetcode-cn.com/problems/transpose-matrix/)
 - [566.重塑矩阵](https://leetcode-cn.com/problems/reshape-the-matrix/)
-- 840.矩阵中的幻方
+- [840.矩阵中的幻方](https://leetcode-cn.com/problems/magic-squares-in-grid/)
 - [118.杨辉三角](https://leetcode-cn.com/problems/pascals-triangle/)
 - [119.杨辉三角 II](https://leetcode-cn.com/problems/pascals-triangle-ii/)
 
 ### 股票专题
-- 121.买卖股票的最佳时机
-- 122.买卖股票的最佳时机
-- 123.买卖股票的最佳时机
-- 741.买卖股票的最佳时机含手续费
+- [121.买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/)
+- [122.买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/)
+- [123.买卖股票的最佳时机 III](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iii/)
+- [188.买卖股票的最佳时机 IV](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iv/)
+- [741.买卖股票的最佳时机含手续费](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)
+- [309.最佳买卖股票时机含冷冻期](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)
 
 ### 其他数组用法
-- 945.使数组唯一的最小增量
+- [945.使数组唯一的最小增量](https://leetcode-cn.com/problems/minimum-increment-to-make-array-unique/)
 - [66.加一](https://leetcode-cn.com/problems/plus-one/)
 
 # 动态规划
@@ -128,6 +131,7 @@
 - [62.不同路径](https://leetcode-cn.com/problems/unique-paths/)
 - [63.不同路径 II](https://leetcode-cn.com/problems/unique-paths-ii/)
 - [980.不同路径 III](https://leetcode-cn.com/problems/unique-paths-iii/)
+- [221.最大正方形](https://leetcode-cn.com/problems/maximal-square/)
 
 ### 背包经典问题
 - [39.组合总和](https://leetcode-cn.com/problems/combination-sum/)
