@@ -5,7 +5,16 @@
 - 18.四数之和
 
 ### 区间合并/重叠区间
-- 
+- [56.合并区间](https://leetcode-cn.com/problems/merge-intervals/)
+- [986.区间列表的交集](https://leetcode-cn.com/problems/interval-list-intersections/)
+- [57.插入区间](https://leetcode-cn.com/problems/insert-interval/)
+- [435.无重叠区间](https://leetcode-cn.com/problems/non-overlapping-intervals/)
+- [252.会议室](https://leetcode-cn.com/problems/meeting-rooms/)
+- [253.会议室 II](https://leetcode-cn.com/problems/meeting-rooms-ii/)
+- [452.用最少数量的箭引爆气球](https://leetcode-cn.com/problems/minimum-number-of-arrows-to-burst-balloons/)
+
+### 区间加减法
+- 795.区间子数组个数
 
 ### 矩阵搜索
 - 74.搜索二维矩阵
@@ -36,9 +45,6 @@
 - 55.跳跃游戏
 - 45.跳跃游戏 II
 - 873.最长的斐波那契子序列的长度
-
-### 区间加减法
-- 795.区间子数组个数
 
 ### 数组嵌套、数组中重复的数
 - 565.数组嵌套
@@ -72,6 +78,12 @@
 - 376.摆动序列
 - 324.摆动排序II
 
+### 旋转数组
+- [189.旋转数组](https://leetcode-cn.com/problems/rotate-array/)
+- [33.搜索旋转排序数组](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/)
+- [81.搜索旋转排序数组 II](https://leetcode-cn.com/problems/search-in-rotated-sorted-array-ii/)
+- [153.寻找旋转排序数组中的最小值](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/)
+- [154.寻找旋转排序数组中的最小值 II](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array-ii/)
 ### 矩阵变换/特殊矩阵
 - 189.旋转数组
 - 840.矩阵中的幻方
