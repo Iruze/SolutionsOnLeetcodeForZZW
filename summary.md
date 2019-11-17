@@ -74,6 +74,7 @@
 - 260.只出现一次的数字III
 
 ### 存在/删除数组中重复元素
+- [27.移除元素](https://leetcode-cn.com/problems/remove-element/)
 - 26.删除排序数组中的重复项
 - 80.删除排序数组中的重复项 II
 - 217.存在重复元素
@@ -104,9 +105,9 @@
 - [154.寻找旋转排序数组中的最小值 II](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array-ii/)
 
 ### 矩阵变换/特殊矩阵
-- 189.旋转数组
 - [48.旋转图像](https://leetcode-cn.com/problems/rotate-image/)
 - [867.转置矩阵](https://leetcode-cn.com/problems/transpose-matrix/)
+- [566.重塑矩阵](https://leetcode-cn.com/problems/reshape-the-matrix/)
 - 840.矩阵中的幻方
 - [118.杨辉三角](https://leetcode-cn.com/problems/pascals-triangle/)
 - [119.杨辉三角 II](https://leetcode-cn.com/problems/pascals-triangle-ii/)
