@@ -59,6 +59,7 @@
 其他动态：
 - [55.跳跃游戏](https://leetcode-cn.com/problems/jump-game/)
 - [45.跳跃游戏 II](https://leetcode-cn.com/problems/jump-game-ii/)
+- [746.使用最小花费爬楼梯](https://leetcode-cn.com/problems/min-cost-climbing-stairs/)
 - [873.最长的斐波那契子序列的长度](https://leetcode-cn.com/problems/length-of-longest-fibonacci-subsequence/)
 - [717.1比特与2比特字符](https://leetcode-cn.com/problems/1-bit-and-2-bit-characters/)
 
