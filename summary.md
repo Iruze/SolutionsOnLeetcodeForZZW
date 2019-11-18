@@ -95,6 +95,7 @@
 
 ### 数组奇偶摆放，摆动排序
 - [905.按奇偶排序数组](https://leetcode-cn.com/problems/sort-array-by-parity/)
+- [922.按奇偶排序数组 II](https://leetcode-cn.com/problems/sort-array-by-parity-ii/submissions/)
 - [376.摆动序列](https://leetcode-cn.com/problems/wiggle-subsequence/)
 - [324.摆动排序 II](https://leetcode-cn.com/problems/wiggle-sort-ii/)
 - [162.寻找峰值](https://leetcode-cn.com/problems/find-peak-element/)
