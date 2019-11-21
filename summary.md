@@ -81,13 +81,7 @@
 - [80.删除排序数组中的重复项 II](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array-ii/)
 - [217.存在重复元素](https://leetcode-cn.com/problems/contains-duplicate/)
 - [219.存在重复元素II](https://leetcode-cn.com/problems/contains-duplicate-ii/)
-- [220.存在重复元素 III](https://leetcode-cn.com/problems/contains-duplicate-iii/)
-
-### 排序/第k大的元素（partition函数）
-- [88.合并两个有序数组（归并排序）](https://leetcode-cn.com/problems/merge-sorted-array/)
-- [912.排序数组 （快排）](https://leetcode-cn.com/problems/sort-an-array/)
-- [414.第三大的数](https://leetcode-cn.com/problems/third-maximum-number/)
-- [215.数组中的第K个最大元素](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/)
+- [220.存在重复元素 III](https://leetcode-cn.com/problems/contains-duplicate-iii/)      
 
 ### 矩阵打印
 - [54.螺旋矩阵](https://leetcode-cn.com/problems/spiral-matrix/)
@@ -168,4 +162,16 @@
 # 栈
 ### [构造空字符栈解括号翻转解码题目](https://github.com/Iruze/SolutionsOnLeetcodeForZZW/blob/master/SolutionsSummary/%E6%A0%88/%E6%9E%84%E9%80%A0%E7%A9%BA%E5%AD%97%E7%AC%A6%E6%A0%88%E8%A7%A3%E6%8B%AC%E5%8F%B7%E7%BF%BB%E8%BD%AC%E8%A7%A3%E7%A0%81%E9%A2%98%E7%9B%AE.md)
 - [1190.反转每对括号间的字符串](https://leetcode-cn.com/problems/reverse-substrings-between-each-pair-of-parentheses/)
-- [394.字符串解码](https://leetcode-cn.com/problems/decode-string/)
+- [394.字符串解码](https://leetcode-cn.com/problems/decode-string/)      
+
+# 排序
+### 第k大的元素（partition函数）/topK问题
+- [414.第三大的数](https://leetcode-cn.com/problems/third-maximum-number/)
+- [215.数组中的第K个最大元素](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/)    
+
+### 归并排序     
+- [88.合并两个有序数组（归并排序）](https://leetcode-cn.com/problems/merge-sorted-array/)      
+- [986.区间列表的交集](https://leetcode-cn.com/problems/interval-list-intersections/)
+
+### 快排
+- [912.排序数组 （快排）](https://leetcode-cn.com/problems/sort-an-array/)
