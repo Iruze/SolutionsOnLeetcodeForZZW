@@ -18,6 +18,12 @@ class Solution:
     def __mergeSort(self, head, end):
         if head == end: return head
         mid, midfast = head, head
+        
+        # 不能是: midfast != null && midfast.next != null
+        # 因为存在 head.next = end 的情况不符合
+        # 所以直接终点认为是 end，直接直接使得 中点mid 偏向头节点
+        # 对于 midfast = midfast.next.next 的连续前进两步的必须要满足：
+        # midfast != end and midfast.next != end， 否则while不能结束，报错stackoverflow.
         while midfast != end and midfast.next != end:
             mid, midfast = mid.next, midfast.next.next
         
