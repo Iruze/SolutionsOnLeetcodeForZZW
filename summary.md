@@ -175,3 +175,11 @@
 
 ### 快排
 - [912.排序数组 （快排）](https://leetcode-cn.com/problems/sort-an-array/)
+
+
+# 链表
+### 链表合并/求和
+- [2.两数相加](https://leetcode-cn.com/problems/add-two-numbers/)
+- [21.合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/)
+- [88.合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/)
+- [23.合并K个排序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists/)
