@@ -171,7 +171,8 @@
 
 ### 归并排序     
 - [88.合并两个有序数组（归并排序）](https://leetcode-cn.com/problems/merge-sorted-array/)      
-- [986.区间列表的交集](https://leetcode-cn.com/problems/interval-list-intersections/)
+- [986.区间列表的交集](https://leetcode-cn.com/problems/interval-list-intersections/)     
+- [148.排序链表](https://leetcode-cn.com/problems/sort-list/)
 
 ### 快排
 - [912.排序数组 （快排）](https://leetcode-cn.com/problems/sort-an-array/)
