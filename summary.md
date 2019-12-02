@@ -55,7 +55,8 @@
 
 ### 数组中的动态规划/贪心
 - [718.最长重复子数组](https://leetcode-cn.com/problems/maximum-length-of-repeated-subarray/)
-- [1143.最长公共子序列](https://leetcode-cn.com/problems/longest-common-subsequence/)     
+- [1143.最长公共子序列](https://leetcode-cn.com/problems/longest-common-subsequence/)
+- [516.最长回文子序列](https://leetcode-cn.com/problems/longest-palindromic-subsequence/)    
 其他动态：
 - [55.跳跃游戏](https://leetcode-cn.com/problems/jump-game/)
 - [45.跳跃游戏 II](https://leetcode-cn.com/problems/jump-game-ii/)
@@ -146,8 +147,7 @@
 ### 最长子序列（动态规划）
 - [674.最长连续递增序列](https://leetcode-cn.com/problems/longest-continuous-increasing-subsequence/)
 - [673.最长递增子序列的个数](https://leetcode-cn.com/problems/number-of-longest-increasing-subsequence/)
-- [300.最长上升子序列](https://leetcode-cn.com/problems/longest-increasing-subsequence/)
-- [516.最长回文子序列](https://leetcode-cn.com/problems/longest-palindromic-subsequence/)
+- [300.最长上升子序列](https://leetcode-cn.com/problems/longest-increasing-subsequence/)      
 
 # 回溯算法
 ### 排列/组合/子集数目
