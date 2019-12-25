@@ -194,3 +194,8 @@
 # 二叉树
 ### 层次遍历二叉树问题
 - [637.二叉树的层平均值](https://leetcode-cn.com/problems/average-of-levels-in-binary-tree/)
+
+
+# 数学方法
+### 丑数
+- [263. 丑数](https://leetcode-cn.com/problems/ugly-number/)
