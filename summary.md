@@ -199,3 +199,4 @@
 # 数学方法
 ### 丑数
 - [263. 丑数](https://leetcode-cn.com/problems/ugly-number/)
+- [264. 丑数II](https://leetcode-cn.com/problems/ugly-number-ii/)
