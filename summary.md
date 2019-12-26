@@ -196,6 +196,18 @@
 - [637.二叉树的层平均值](https://leetcode-cn.com/problems/average-of-levels-in-binary-tree/)
 
 
+# 广度优先搜索BFS
+- [934. 最短的桥](https://leetcode-cn.com/problems/shortest-bridge/)
+- [994. 腐烂的橘子](https://leetcode-cn.com/problems/rotting-oranges/)
+- [286. 墙与门](https://leetcode-cn.com/problems/walls-and-gates/)
+- [200. 岛屿数量](https://leetcode-cn.com/problems/number-of-islands/)
+- [305. 岛屿数量II](https://leetcode-cn.com/problems/number-of-islands-ii/)
+- [694. 不同岛屿的数量](https://leetcode-cn.com/problems/number-of-distinct-islands/)
+- [695. 岛屿的最大面积](https://leetcode-cn.com/problems/max-area-of-island/)
+- [463. 岛屿的周长](https://leetcode-cn.com/problems/island-perimeter/)
+- [711. 不同岛屿的数量II](https://leetcode-cn.com/problems/number-of-distinct-islands-ii/)
+
+
 # 数学方法
 ### 丑数
 - [263. 丑数](https://leetcode-cn.com/problems/ugly-number/)
