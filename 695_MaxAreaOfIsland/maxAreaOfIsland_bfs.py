@@ -29,3 +29,4 @@ class Solution:
         for nr, nc in ((r + 1, c), (r - 1, c), (r, c + 1), (r, c - 1)):
             if 0 <= nr < rows and 0 <= nc < cols and grid[nr][nc] == 1 and not visited[nr][nc]:
                 yield nr, nc
+        
