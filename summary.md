@@ -136,6 +136,7 @@
 - [63.不同路径 II](https://leetcode-cn.com/problems/unique-paths-ii/)
 - [980.不同路径 III](https://leetcode-cn.com/problems/unique-paths-iii/)
 - [221.最大正方形](https://leetcode-cn.com/problems/maximal-square/)
+- [562. 矩阵中最长的连续1线段](https://leetcode-cn.com/problems/longest-line-of-consecutive-one-in-matrix/)
 
 ### 背包经典问题
 - [39.组合总和](https://leetcode-cn.com/problems/combination-sum/)
