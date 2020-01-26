@@ -11,6 +11,7 @@
 - [941.有效的山脉数组](https://leetcode-cn.com/problems/valid-mountain-array/)
 - [283.移动零](https://leetcode-cn.com/problems/move-zeroes/)
 - [75.颜色分类](https://leetcode-cn.com/problems/sort-colors/)
+- [259. 较小的三数之和](https://leetcode-cn.com/problems/3sum-smaller/)
 
 ### 区间合并/重叠区间
 - [56.合并区间](https://leetcode-cn.com/problems/merge-intervals/)
