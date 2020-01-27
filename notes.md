@@ -10,3 +10,7 @@
 
 - shell语法      
 [1). 195.第十行](https://leetcode-cn.com/problems/tenth-line/solution/3chong-fang-shi-by-thson/)
+
+
+## 优秀的题解/总结
+[35. 搜索插入位置-"排除法"写二分查找](https://leetcode-cn.com/problems/search-insert-position/solution/te-bie-hao-yong-de-er-fen-cha-fa-fa-mo-ban-python-/)
