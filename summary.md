@@ -57,6 +57,7 @@
 - [581.最短无序连续子数组](https://leetcode-cn.com/problems/shortest-unsorted-continuous-subarray/)
 - [209. 长度最小的子数组](https://leetcode-cn.com/problems/minimum-size-subarray-sum/)
 - [325. 和等于 k 的最长子数组长度](https://leetcode-cn.com/problems/maximum-size-subarray-sum-equals-k/)
+- [525. 连续数组](https://leetcode-cn.com/problems/contiguous-array/)
 
 ### 数组中的动态规划/贪心
 - [718.最长重复子数组](https://leetcode-cn.com/problems/maximum-length-of-repeated-subarray/)
