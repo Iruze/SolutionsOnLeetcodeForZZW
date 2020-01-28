@@ -50,6 +50,7 @@
 
 
 ### 前缀和-求和/积不超过（等于）k/最大的连续子数组的个数
+- [303. 区域和检索 - 数组不可变](https://leetcode-cn.com/problems/range-sum-query-immutable/submissions/)
 - [53.最大子序和](https://leetcode-cn.com/problems/maximum-subarray/)
 - [560.和为K的子数组](https://leetcode-cn.com/problems/subarray-sum-equals-k/)
 - [713.乘积小于K的子数组](https://leetcode-cn.com/problems/subarray-product-less-than-k/)
