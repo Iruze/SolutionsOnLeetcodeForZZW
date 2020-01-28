@@ -1,3 +1,8 @@
+# 同#525. 连续数组 解题思路
+# 求数组nums中0， 1数目相同的最长子数组长度
+# 1). 将0转化为-1
+# 2). 转化为求和k=0的最长子数组长度
+
 class Solution:
     def maxSubArrayLen(self, nums: List[int], k: int) -> int:
         lookup = {0:-1}
