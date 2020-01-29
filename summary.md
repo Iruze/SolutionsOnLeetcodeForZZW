@@ -1,6 +1,7 @@
 # 数组
 ### 双指针
 - [1.两数之和](https://leetcode-cn.com/problems/two-sum/)
+- [1099. 小于 K 的两数之和](https://leetcode-cn.com/problems/two-sum-less-than-k/)
 - [167.两数之和 II - 输入有序数组](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/)
 - [15.三数之和](https://leetcode-cn.com/problems/3sum/)
 - [18.四数之和](https://leetcode-cn.com/problems/4sum/)
