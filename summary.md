@@ -224,4 +224,5 @@
 ### 水壶问题(裴蜀定理)
 - [365. 水壶问题](https://leetcode-cn.com/problems/water-and-jug-problem/)
 
-
+### 数学其他
+- [7. 整数反转](https://leetcode-cn.com/problems/reverse-integer/submissions/)
