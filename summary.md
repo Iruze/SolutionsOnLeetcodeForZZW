@@ -198,8 +198,9 @@
 - [21.合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/)
 - [88.合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/)
 - [23.合并K个排序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists/)       
-- 两个非负整数的字符串相加 和 两个链表相加
+- 两个非负整数的字符串相加 & 两个链表相加 & 二进制求和
 - [415. 字符串相加](https://leetcode-cn.com/problems/add-strings/solution/add-strings-shuang-zhi-zhen-fa-by-jyd/)
+- [67. 二进制求和](https://leetcode-cn.com/problems/add-binary/)
 
 # 二叉树
 ### 层次遍历二叉树问题
