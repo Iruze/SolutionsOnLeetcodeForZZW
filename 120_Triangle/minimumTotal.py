@@ -1,8 +1,9 @@
-# 解法一： O(N2)空间效率
+# 解法一： O(N2)空间效率，原地修改数组
 class Solution:
     def minimumTotal(self, triangle: List[List[int]]) -> int:
         if not triangle or not triangle[0]:
             return 0
+        # 原地修改数组，不需要重新申请空间
         for i in range(1, len(triangle)):
             for j in range(i + 1):
                 if j == 0:
@@ -19,6 +20,7 @@ class Solution:
     def minimumTotal(self, triangle: List[List[int]]) -> int:
         if not triangle or not triangle[0]:
             return 0
+        # 申请O(N)的空间
         dp = [0] * len(triangle)
         dp[0] = triangle[0][0]
         for i in range(1, len(triangle)):
