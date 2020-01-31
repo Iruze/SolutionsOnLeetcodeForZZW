@@ -141,6 +141,7 @@
 - [64.最小路径和](https://leetcode-cn.com/problems/minimum-path-sum/)
 - [62.不同路径](https://leetcode-cn.com/problems/unique-paths/)
 - [63.不同路径 II](https://leetcode-cn.com/problems/unique-paths-ii/)
+- [120. 三角形最小路径和](https://leetcode-cn.com/problems/triangle/)
 - [980.不同路径 III](https://leetcode-cn.com/problems/unique-paths-iii/)
 - [221.最大正方形](https://leetcode-cn.com/problems/maximal-square/)
 - [562. 矩阵中最长的连续1线段](https://leetcode-cn.com/problems/longest-line-of-consecutive-one-in-matrix/)
