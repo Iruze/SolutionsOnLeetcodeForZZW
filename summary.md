@@ -233,3 +233,7 @@
 ### 数学其他
 - [7. 整数反转](https://leetcode-cn.com/problems/reverse-integer/submissions/)
 - [50. Pow(x, n)](https://leetcode-cn.com/problems/powx-n/)
+
+
+# 脑筋急转弯
+- [292. Nim 游戏](https://leetcode-cn.com/problems/nim-game/)
