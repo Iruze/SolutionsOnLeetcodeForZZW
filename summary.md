@@ -230,6 +230,10 @@
 ### 水壶问题(裴蜀定理)
 - [365. 水壶问题](https://leetcode-cn.com/problems/water-and-jug-problem/)
 
+### 模拟加法+乘法
+- [67. 二进制求和](https://leetcode-cn.com/problems/add-binary/)
+- [43. 字符串相乘](https://leetcode-cn.com/problems/multiply-strings/)
+
 ### 数学其他
 - [7. 整数反转](https://leetcode-cn.com/problems/reverse-integer/submissions/)
 - [50. Pow(x, n)](https://leetcode-cn.com/problems/powx-n/)
