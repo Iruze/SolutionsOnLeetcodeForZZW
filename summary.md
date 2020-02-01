@@ -237,6 +237,7 @@
 ### 数学其他
 - [7. 整数反转](https://leetcode-cn.com/problems/reverse-integer/submissions/)
 - [50. Pow(x, n)](https://leetcode-cn.com/problems/powx-n/)
+- [343. 整数拆分](https://leetcode-cn.com/problems/integer-break/)
 
 
 # 脑筋急转弯
