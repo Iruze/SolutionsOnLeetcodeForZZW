@@ -234,6 +234,10 @@
 - [67. 二进制求和](https://leetcode-cn.com/problems/add-binary/)
 - [43. 字符串相乘](https://leetcode-cn.com/problems/multiply-strings/)
 
+### 计算矩形/正方形的面积
+- [223. Rectangle Area](https://leetcode-cn.com/problems/rectangle-area/)
+- [836. 矩形重叠](https://leetcode-cn.com/problems/rectangle-overlap/submissions/)
+
 ### 数学其他
 - [7. 整数反转](https://leetcode-cn.com/problems/reverse-integer/submissions/)
 - [50. Pow(x, n)](https://leetcode-cn.com/problems/powx-n/)
