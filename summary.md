@@ -177,7 +177,8 @@
 - [394.字符串解码](https://leetcode-cn.com/problems/decode-string/)
 - [606.根据二叉树创建字符串](https://leetcode-cn.com/problems/construct-string-from-binary-tree/)
 ### 单调栈
-- [402.移掉K位数字](https://leetcode-cn.com/problems/remove-k-digits/)    
+- [402.移掉K位数字](https://leetcode-cn.com/problems/remove-k-digits/)  
+- [496. 下一个更大元素 I](https://leetcode-cn.com/problems/next-greater-element-i/)
 
 # 排序
 ### 第k大的元素（partition函数）/topK问题
