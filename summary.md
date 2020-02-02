@@ -243,6 +243,8 @@
 - [50. Pow(x, n)](https://leetcode-cn.com/problems/powx-n/)
 - [343. 整数拆分](https://leetcode-cn.com/problems/integer-break/)
 
+# 字符串
+- [6. Z 字形变换](https://leetcode-cn.com/problems/zigzag-conversion/submissions/)
 
 # 脑筋急转弯
 - [292. Nim 游戏](https://leetcode-cn.com/problems/nim-game/)
