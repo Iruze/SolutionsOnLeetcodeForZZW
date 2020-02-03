@@ -179,6 +179,8 @@
 ### 单调栈
 - [402.移掉K位数字](https://leetcode-cn.com/problems/remove-k-digits/)  
 - [496. 下一个更大元素 I](https://leetcode-cn.com/problems/next-greater-element-i/)
+- [503. 下一个更大元素 II](https://leetcode-cn.com/problems/next-greater-element-ii/)
+- [739. 每日温度](https://leetcode-cn.com/problems/daily-temperatures/)
 
 # 排序
 ### 第k大的元素（partition函数）/topK问题
