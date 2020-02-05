@@ -249,5 +249,9 @@
 # 字符串
 - [6. Z 字形变换](https://leetcode-cn.com/problems/zigzag-conversion/submissions/)
 
+# shell脚本
+- [192. 统计词频](https://leetcode-cn.com/problems/word-frequency/)
+
+
 # 脑筋急转弯
 - [292. Nim 游戏](https://leetcode-cn.com/problems/nim-game/)
