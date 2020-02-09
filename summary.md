@@ -161,7 +161,13 @@
 ### 最长子序列（动态规划）
 - [674.最长连续递增序列](https://leetcode-cn.com/problems/longest-continuous-increasing-subsequence/)
 - [673.最长递增子序列的个数](https://leetcode-cn.com/problems/number-of-longest-increasing-subsequence/)
-- [300.最长上升子序列](https://leetcode-cn.com/problems/longest-increasing-subsequence/)  
+- [300.最长上升子序列](https://leetcode-cn.com/problems/longest-increasing-subsequence/)     
+
+### 最长公共子序列/子数组
+- [1143. 最长公共子序列](https://leetcode-cn.com/problems/longest-common-subsequence)
+- [718. 最长重复子数组](https://leetcode-cn.com/problems/longest-common-subsequence)
+- [583. 两个字符串的删除操作](https://leetcode-cn.com/problems/delete-operation-for-two-strings/)
+- [712. 两个字符串的最小ASCII删除和](https://leetcode-cn.com/problems/minimum-ascii-delete-sum-for-two-strings/)
 
 ### 数学拆分/被x整除的最大和的dp
 - [343. 整数拆分](https://leetcode-cn.com/problems/integer-break/)
