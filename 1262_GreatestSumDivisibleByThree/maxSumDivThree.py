@@ -25,6 +25,9 @@ class Solution:
 """
 有问题的地方：
 1). 初始值dp = [0, float('-Inf'), float('-Inf')]，为什么不是dp = [0, 0, 0]
+    因为，如果是dp = [0, 0, 0], 那么如果dp[0] = 3，则第一循环dp = [3, 3, 3], 第二次循环dp = [8, 8, 8]
+         如果是dp = [0, float('-Inf'), float('-Inf')], 第一次循环dp = [3, -inf, -inf], 第二次dp = [3, -inf, 8]
+
 2). dp[(i - num) % 3]，有的解法是 dp[(3 + i - mod) % 3], 或者dp[(i - mod) % 3], 这里需要运用到的取余运算为：
     (a + b) % p = (a % p + b % p) % p 
 
