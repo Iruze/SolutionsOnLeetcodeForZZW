@@ -163,7 +163,7 @@
 - [673.最长递增子序列的个数](https://leetcode-cn.com/problems/number-of-longest-increasing-subsequence/)
 - [300.最长上升子序列](https://leetcode-cn.com/problems/longest-increasing-subsequence/)  
 
-# 数学拆分/被x整除的最大和的dp
+### 数学拆分/被x整除的最大和的dp
 - [343. 整数拆分](https://leetcode-cn.com/problems/integer-break/)
 - [1262. 可被三整除的最大和](https://leetcode-cn.com/problems/greatest-sum-divisible-by-three/)
 
