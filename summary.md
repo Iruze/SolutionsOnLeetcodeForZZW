@@ -168,6 +168,7 @@
 - [718. 最长重复子数组](https://leetcode-cn.com/problems/longest-common-subsequence)
 - [583. 两个字符串的删除操作](https://leetcode-cn.com/problems/delete-operation-for-two-strings/)
 - [712. 两个字符串的最小ASCII删除和](https://leetcode-cn.com/problems/minimum-ascii-delete-sum-for-two-strings/)
+- [72. 编辑距离](https://leetcode-cn.com/problems/edit-distance/)
 
 ### 数学拆分/被x整除的最大和的dp
 - [343. 整数拆分](https://leetcode-cn.com/problems/integer-break/)
