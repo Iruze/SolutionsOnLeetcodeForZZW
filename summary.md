@@ -240,6 +240,9 @@
 
 
 # 数学方法
+### 蓄水池抽样算法/水塘抽样算法
+- [382. 链表随机节点](https://leetcode-cn.com/problems/linked-list-random-node/submissions/)
+- [398. 随机数索引](https://leetcode-cn.com/problems/random-pick-index/)
 ### 丑数
 - [263. 丑数](https://leetcode-cn.com/problems/ugly-number/)
 - [264. 丑数II](https://leetcode-cn.com/problems/ugly-number-ii/)
