@@ -87,6 +87,11 @@
 - [136.只出现一次的数字](https://leetcode-cn.com/problems/single-number/)
 - [137.只出现一次的数字II](https://leetcode-cn.com/problems/single-number-ii/)
 - [260.只出现一次的数字III](https://leetcode-cn.com/problems/single-number-iii/)
+###### 位运算技巧：
+- [415. 字符串相加](https://leetcode-cn.com/problems/add-strings/solution/add-strings-shuang-zhi-zhen-fa-by-jyd/)
+- [67. 二进制求和](https://leetcode-cn.com/problems/add-binary/)
+- [989. 数组形式的整数加法](https://leetcode-cn.com/problems/add-to-array-form-of-integer/)
+- [面试题65. 不用加减乘除做加法](https://leetcode-cn.com/problems/bu-yong-jia-jian-cheng-chu-zuo-jia-fa-lcof/)
 
 ### 存在/删除数组中重复元素
 - [27.移除元素](https://leetcode-cn.com/problems/remove-element/)
