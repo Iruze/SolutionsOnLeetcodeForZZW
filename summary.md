@@ -200,6 +200,9 @@
 - [496. 下一个更大元素 I](https://leetcode-cn.com/problems/next-greater-element-i/)
 - [503. 下一个更大元素 II](https://leetcode-cn.com/problems/next-greater-element-ii/)
 - [739. 每日温度](https://leetcode-cn.com/problems/daily-temperatures/)
+- [面试题59 - II. 队列的最大值](https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof/)
+- [面试题59 - I](https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof)
+
 
 # 排序
 ### 第k大的元素（partition函数）/topK问题
