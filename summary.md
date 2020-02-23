@@ -274,6 +274,7 @@
 
 # 字符串
 - [6. Z 字形变换](https://leetcode-cn.com/problems/zigzag-conversion/submissions/)
+- [65. 有效数字](https://leetcode-cn.com/problems/valid-number/)
 
 # shell脚本
 - [192. 统计词频](https://leetcode-cn.com/problems/word-frequency/)
