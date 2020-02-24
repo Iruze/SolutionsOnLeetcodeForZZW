@@ -22,7 +22,7 @@
 
 输出: 3
 ```
-运用广度有限搜索BFS和深度有限搜索DFS两种解法：
+运用**广度优先搜索BFS**和**深度优先搜索DFS**两种解法：
 ```python3
 # 解法一： 深度优先搜索dfs
 class Solution:
@@ -43,8 +43,9 @@ class Solution:
         for nr, nc in ((i + 1, j), (i - 1, j), (i, j + 1), (i, j - 1)):
             if 0 <= nr < m and 0 <= nc < n and not visted[nr][nc] and grid[nr][nc] == '1':
                 self.__dfs(grid, nr, nc, m, n, visted)
+```
 
-                
+```python3                
 # 解法二： 广度优先搜索bfs
 class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
