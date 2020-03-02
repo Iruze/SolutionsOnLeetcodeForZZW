@@ -282,3 +282,17 @@
 
 # 脑筋急转弯
 - [292. Nim 游戏](https://leetcode-cn.com/problems/nim-game/)
+
+# MySQL
+- [1082. 销售分析I](https://leetcode-cn.com/problems/sales-analysis-i)
+- [627. 交换工资](https://leetcode-cn.com/problems/swap-salary)
+- [595. 大的国家](https://leetcode-cn.com/problems/big-countries/)
+- [176. 第二高的薪水](https://leetcode-cn.com/problems/second-highest-salary/)
+- [1084. 销售分析III](https://leetcode-cn.com/problems/sales-analysis-iii/)
+- [512. 游戏玩法分析 II](https://leetcode-cn.com/problems/game-play-analysis-ii/)
+- [196. 删除重复的电子邮箱](https://leetcode-cn.com/problems/delete-duplicate-emails/)
+- [1179. 重新格式化部门表](https://leetcode-cn.com/problems/reformat-department-table/)
+- [181. 超过经理收入的员工](https://leetcode-cn.com/problems/employees-earning-more-than-their-managers/)
+- [182. 查找重复的电子邮箱](https://leetcode-cn.com/problems/duplicate-emails/)
+- [1098. 小众书籍](https://leetcode-cn.com/problems/unpopular-books/)
+- [178. 分数排名](https://leetcode-cn.com/problems/rank-scores/)
