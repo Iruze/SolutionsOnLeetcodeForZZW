@@ -22,6 +22,7 @@ class Solution:
         if left == len(nums) or nums[left] != target:
             return [-1, -1]
         right = self._posLR(nums, target, False)
+        # right实际是target右边位置的后一个数
         return [left, right - 1]
     
     def _posLR(self, nums, target, isLeft):
