@@ -44,6 +44,7 @@
 - [704. 二分查找](https://leetcode-cn.com/problems/binary-search/submissions/)
 - [153. 寻找旋转排序数组中的最小值](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/)
 - [154. 寻找旋转排序数组中的最小值 II](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array-ii/)
+- [875. 爱吃香蕉的珂珂](https://leetcode-cn.com/problems/koko-eating-bananas/)
 
 ### 众数
 - [169.求众数](https://leetcode-cn.com/problems/majority-element/)
