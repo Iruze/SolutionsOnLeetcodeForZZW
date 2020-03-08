@@ -166,6 +166,8 @@
 - [377.组合总和 IV](https://leetcode-cn.com/problems/combination-sum-iv/)
 - [322.零钱兑换](https://leetcode-cn.com/problems/coin-change/)
 - [518.零钱兑换 II](https://leetcode-cn.com/problems/coin-change-2/)
+- [416. 分割等和子集](https://leetcode-cn.com/problems/partition-equal-subset-sum/)
+- [139. 单词拆分](https://leetcode-cn.com/problems/word-break)
 
 ### 最长子序列（动态规划）
 - [674.最长连续递增序列](https://leetcode-cn.com/problems/longest-continuous-increasing-subsequence/)
