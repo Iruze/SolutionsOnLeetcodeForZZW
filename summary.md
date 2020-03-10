@@ -237,6 +237,12 @@
 - [989. 数组形式的整数加法](https://leetcode-cn.com/problems/add-to-array-form-of-integer/)
 
 # 二叉树
+### 二叉树深度/平衡二叉树
+- [104. 二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)
+- [110. 平衡二叉树](https://leetcode-cn.com/problems/balanced-binary-tree/)
+- [543. 二叉树的直径](https://leetcode-cn.com/problems/diameter-of-binary-tree/)
+
+
 ### 层次遍历二叉树问题
 - [637.二叉树的层平均值](https://leetcode-cn.com/problems/average-of-levels-in-binary-tree/)
 
