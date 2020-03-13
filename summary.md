@@ -268,6 +268,7 @@
 - [263. 丑数](https://leetcode-cn.com/problems/ugly-number/)
 - [264. 丑数II](https://leetcode-cn.com/problems/ugly-number-ii/)
 - [1201. 丑数III](https://leetcode-cn.com/problems/ugly-number-iii/)
+- [507. 完美数](https://leetcode-cn.com/problems/perfect-number/)
 ### 水壶问题(裴蜀定理)
 - [365. 水壶问题](https://leetcode-cn.com/problems/water-and-jug-problem/)
 ### 约瑟夫环
