@@ -14,3 +14,8 @@
 
 ## 优秀的题解/总结
 [35. 搜索插入位置-"排除法"写二分查找](https://leetcode-cn.com/problems/search-insert-position/solution/te-bie-hao-yong-de-er-fen-cha-fa-fa-mo-ban-python-/)
+
+
+### partition的时间复杂度为什么是O(N)
+
+ref: [被忽视的 partition 算法](https://www.jianshu.com/p/daebe1596ca6)
