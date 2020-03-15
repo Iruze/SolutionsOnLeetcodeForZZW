@@ -17,6 +17,7 @@ class Solution:
         idx = random.randint(start, end)
         nums[idx], nums[end] = nums[end], nums[idx]
         large = start - 1
+        # 排列的是逆序，large维护前large的最大值
         for idx in range(start, end):
             if nums[idx] > nums[end]:
                 large += 1
