@@ -1,5 +1,5 @@
-##### 复制答案，没做
-- [994.腐烂的橘子](https://leetcode-cn.com/problems/rotting-oranges/)     
+##### 周赛没做，需要消化/总结
+- [5359. 最大的团队表现值](https://leetcode-cn.com/problems/maximum-performance-of-a-team/)  
 
 #### 不是特别懂，后续需要消化的
 - [365. 水壶问题](https://leetcode-cn.com/problems/water-and-jug-problem/)
