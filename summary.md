@@ -285,6 +285,7 @@
 ### 数学其他
 - [7. 整数反转](https://leetcode-cn.com/problems/reverse-integer/submissions/)
 - [50. Pow(x, n)](https://leetcode-cn.com/problems/powx-n/)
+- [172. 阶乘后的零](https://leetcode-cn.com/problems/factorial-trailing-zeroes/)
 
 # 字符串
 - [6. Z 字形变换](https://leetcode-cn.com/problems/zigzag-conversion/submissions/)
