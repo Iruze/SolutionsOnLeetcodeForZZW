@@ -224,6 +224,10 @@
 ### 快排
 - [912.排序数组 （快排）](https://leetcode-cn.com/problems/sort-an-array/)
 
+### 堆排序
+- [347. 前 K 个高频元素](https://leetcode-cn.com/problems/top-k-frequent-elements/)
+- [703. 数据流中的第K大元素](https://leetcode-cn.com/problems/kth-largest-element-in-a-stream/)
+
 
 # 链表
 ### 链表合并/求和
