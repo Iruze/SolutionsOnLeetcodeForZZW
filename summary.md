@@ -170,6 +170,12 @@
 - [416. 分割等和子集](https://leetcode-cn.com/problems/partition-equal-subset-sum/)
 - [139. 单词拆分](https://leetcode-cn.com/problems/word-break)
 
+### 打家劫舍
+- [198. 打家劫舍](https://leetcode-cn.com/problems/house-robber/)
+- [213. 打家劫舍 II](https://leetcode-cn.com/problems/house-robber-ii/)
+- [337. 打家劫舍 III](https://leetcode-cn.com/problems/house-robber-iii/)
+- [256. 粉刷房子](https://leetcode-cn.com/problems/paint-house/)
+
 ### 最长子序列（动态规划）
 - [674.最长连续递增序列](https://leetcode-cn.com/problems/longest-continuous-increasing-subsequence/)
 - [673.最长递增子序列的个数](https://leetcode-cn.com/problems/number-of-longest-increasing-subsequence/)
