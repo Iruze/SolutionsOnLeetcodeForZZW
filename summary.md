@@ -218,6 +218,7 @@
 ### 栈设计类
 - [155. 最小栈](https://leetcode-cn.com/problems/min-stack/)
 - [716. 最大栈](https://leetcode-cn.com/problems/max-stack/)
+- [面试题 03.04. 化栈为队](https://leetcode-cn.com/problems/implement-queue-using-stacks-lcci/)
 
 # 排序
 ### 第k大的元素（partition函数）/topK问题
