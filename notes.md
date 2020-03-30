@@ -19,3 +19,16 @@
 ### partition的时间复杂度为什么是O(N)
 
 ref: [被忽视的 partition 算法](https://www.jianshu.com/p/daebe1596ca6)
+
+
+### 没做出来的，需要思考
+
+[1162	地图分析](https://leetcode-cn.com/problems/as-far-from-land-as-possible) vs
+[994 腐烂的橘子](https://leetcode-cn.com/problems/rotting-oranges)  
+
+### 需要总结的
+
+堆排序总结： 前K个高频元素
+打家劫舍总结
+周赛，双周赛总结
+最大栈的总结：https://leetcode-cn.com/problems/max-stack/
