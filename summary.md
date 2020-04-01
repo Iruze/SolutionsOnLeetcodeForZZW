@@ -274,6 +274,10 @@
 - [711. 不同岛屿的数量II](https://leetcode-cn.com/problems/number-of-distinct-islands-ii/)
 
 
+# 字典树/前缀树
+- [820. 单词的压缩编码](https://leetcode-cn.com/problems/short-encoding-of-words/)
+
+
 # 数学方法
 ### 蓄水池抽样算法/水塘抽样算法
 - [382. 链表随机节点](https://leetcode-cn.com/problems/linked-list-random-node/submissions/)
