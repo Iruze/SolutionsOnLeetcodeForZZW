@@ -82,6 +82,7 @@
 - [717.1比特与2比特字符](https://leetcode-cn.com/problems/1-bit-and-2-bit-characters/)
 
 ### 数组嵌套、数组中重复的数
+- [41. 缺失的第一个正数](https://leetcode-cn.com/problems/first-missing-positive/)
 - [565.数组嵌套](https://leetcode-cn.com/problems/array-nesting/)
 - [442.数组中重复的数据](https://leetcode-cn.com/problems/find-all-duplicates-in-an-array/)
 - [448.找到所有数组中消失的数字](https://leetcode-cn.com/problems/find-all-numbers-disappeared-in-an-array/)
