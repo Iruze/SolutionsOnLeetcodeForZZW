@@ -259,7 +259,10 @@
 
 # 二叉树
 ### 二叉树遍历（递归&迭代）
+- [144. 二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/)
 - [94. 二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/)
+- [145. 二叉树的后序遍历](https://leetcode-cn.com/problems/binary-tree-postorder-traversal/)
+
 ### 二叉树深度/平衡二叉树
 - [104. 二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)
 - [110. 平衡二叉树](https://leetcode-cn.com/problems/balanced-binary-tree/)
