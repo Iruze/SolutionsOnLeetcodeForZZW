@@ -99,6 +99,9 @@
 - [989. 数组形式的整数加法](https://leetcode-cn.com/problems/add-to-array-form-of-integer/)
 - [面试题65. 不用加减乘除做加法](https://leetcode-cn.com/problems/bu-yong-jia-jian-cheng-chu-zuo-jia-fa-lcof/)
 
+###### 位运算-原地算法：新值 = (count<<1) | 旧值
+- [289. 生命游戏](https://leetcode-cn.com/problems/game-of-life/)
+
 ### 存在/删除数组中重复元素
 - [27.移除元素](https://leetcode-cn.com/problems/remove-element/)
 - [26.删除排序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/)
