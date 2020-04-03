@@ -33,12 +33,15 @@
 
 ### 矩阵搜索/置零/横纵标记
 - [74.搜索二维矩阵](https://leetcode-cn.com/problems/search-a-2d-matrix/)
+- [240. 搜索二维矩阵 II](https://leetcode-cn.com/problems/search-a-2d-matrix-ii/)
+- [378. 有序矩阵中第K小的元素](https://leetcode-cn.com/problems/kth-smallest-element-in-a-sorted-matrix/)
 - [289.生命游戏](https://leetcode-cn.com/problems/game-of-life/)
 - [73.矩阵置零](https://leetcode-cn.com/problems/set-matrix-zeroes/)
 ### 二分查找
 - [34.在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
 - [面试题53 - I. 在排序数组中查找数字 I](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/)
 - [658. 找到 K 个最接近的元素](https://leetcode-cn.com/problems/find-k-closest-elements/)
+- [378. 有序矩阵中第K小的元素](https://leetcode-cn.com/problems/kth-smallest-element-in-a-sorted-matrix/)
 - [面试题53 - II. 0～n-1中缺失的数字](https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/)
 - [35. 搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/solution/te-bie-hao-yong-de-er-fen-cha-fa-fa-mo-ban-python-/)
 - [704. 二分查找](https://leetcode-cn.com/problems/binary-search/submissions/)
@@ -234,7 +237,8 @@
 # 排序
 ### 第k大的元素（partition函数）/topK问题
 - [414.第三大的数](https://leetcode-cn.com/problems/third-maximum-number/)
-- [215.数组中的第K个最大元素](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/)    
+- [215.数组中的第K个最大元素](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/)   
+- [378. 有序矩阵中第K小的元素](https://leetcode-cn.com/problems/kth-smallest-element-in-a-sorted-matrix/)
 
 ### 归并排序     
 - [88.合并两个有序数组（归并排序）](https://leetcode-cn.com/problems/merge-sorted-array/)      
