@@ -1,4 +1,21 @@
-# 方法一： 二分法-传统流程
+# 方法pro: O(logmn)的二分法
+class Solution:
+    def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
+        if not matrix or not matrix[0]: return False
+        if target < matrix[0][0] or target > matrix[-1][-1]: return False
+        rows, cols = len(matrix), len(matrix[0])
+        lo, hi = 0, rows * cols - 1
+        while lo < hi:
+            mid = lo + ((hi - lo) >> 1)
+            r, c = mid // cols, mid % cols
+            if matrix[r][c] < target:
+                lo = mid + 1
+            else:
+                hi = mid
+        return matrix[lo // cols][lo % cols] == target
+    
+    
+# 方法一： 二分法-传统流程 O(logm * logn)
 class Solution:
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
         m = len(matrix)
@@ -27,7 +44,7 @@ class Solution:
                 endR = midR
         return matrix[startC][startR] == target
 
-# 方法二： 二分法-借用bisect，numpy.array()函数
+# 方法二： 二分法-借用bisect，numpy.array()函数, O(logm * logn)
 import numpy as np
 
 class Solution:
