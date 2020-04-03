@@ -1,3 +1,4 @@
+# 方法一： 二分法-传统流程
 class Solution:
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
         m = len(matrix)
@@ -25,3 +26,20 @@ class Solution:
             else:
                 endR = midR
         return matrix[startC][startR] == target
+
+# 方法二： 二分法-借用bisect，numpy.array()函数
+import numpy as np
+
+class Solution:
+    def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
+        if not matrix or not matrix[0]: return False
+        rows, cols = len(matrix), len(matrix[0])
+        mat = np.array(matrix)
+        # 找到应该插入的行
+        r = bisect.bisect_left(mat[:, cols - 1], target)
+        # 如果插入在行尾，则说明target大于行尾的数，
+        if r >= rows: return False
+        if matrix[r][-1] == target: return True
+        # 找到应该插入的列
+        c = bisect.bisect_left(matrix[r], target)
+        return matrix[r][c] == target
