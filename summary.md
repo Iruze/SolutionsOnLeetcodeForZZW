@@ -102,6 +102,7 @@
 - [67. 二进制求和](https://leetcode-cn.com/problems/add-binary/)
 - [989. 数组形式的整数加法](https://leetcode-cn.com/problems/add-to-array-form-of-integer/)
 - [面试题65. 不用加减乘除做加法](https://leetcode-cn.com/problems/bu-yong-jia-jian-cheng-chu-zuo-jia-fa-lcof/)
+- [191. 位1的个数](https://leetcode-cn.com/problems/number-of-1-bits/)
 
 ###### 位运算-原地算法：新值 = (count<<1) | 旧值
 - [289. 生命游戏](https://leetcode-cn.com/problems/game-of-life/)
