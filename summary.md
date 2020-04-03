@@ -106,6 +106,9 @@
 ###### 位运算-原地算法：新值 = (count<<1) | 旧值
 - [289. 生命游戏](https://leetcode-cn.com/problems/game-of-life/)
 
+###### 位运算其他：
+- [1009. 十进制整数的反码](https://leetcode-cn.com/problems/complement-of-base-10-integer/)
+
 ### 存在/删除数组中重复元素
 - [27.移除元素](https://leetcode-cn.com/problems/remove-element/)
 - [26.删除排序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/)
