@@ -195,7 +195,8 @@
 
 ### 最长公共子序列/子数组
 - [1143. 最长公共子序列](https://leetcode-cn.com/problems/longest-common-subsequence)
-- [718. 最长重复子数组](https://leetcode-cn.com/problems/longest-common-subsequence)
+- [718. 最长重复子数组](https://leetcode-cn.com/problems/maximum-length-of-repeated-subarray/)
+- [115. 不同的子序列](https://leetcode-cn.com/problems/distinct-subsequences/)
 - [583. 两个字符串的删除操作](https://leetcode-cn.com/problems/delete-operation-for-two-strings/)
 - [712. 两个字符串的最小ASCII删除和](https://leetcode-cn.com/problems/minimum-ascii-delete-sum-for-two-strings/)
 - [72. 编辑距离](https://leetcode-cn.com/problems/edit-distance/)
@@ -333,7 +334,7 @@
 - [50. Pow(x, n)](https://leetcode-cn.com/problems/powx-n/)
 - [172. 阶乘后的零](https://leetcode-cn.com/problems/factorial-trailing-zeroes/)
 
-# 字符串
+# 字符串（不含dp）
 - [6. Z 字形变换](https://leetcode-cn.com/problems/zigzag-conversion/submissions/)
 - [65. 有效数字](https://leetcode-cn.com/problems/valid-number/)
 ### 回文
