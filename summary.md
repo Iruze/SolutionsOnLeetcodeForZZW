@@ -272,10 +272,16 @@
 - [110. 平衡二叉树](https://leetcode-cn.com/problems/balanced-binary-tree/)
 - [543. 二叉树的直径](https://leetcode-cn.com/problems/diameter-of-binary-tree/)
 
-
 ### 层次遍历二叉树问题
 - [637.二叉树的层平均值](https://leetcode-cn.com/problems/average-of-levels-in-binary-tree/)
 
+### 二叉树中的回溯/DFS
+- [112. 路径总和](https://leetcode-cn.com/problems/path-sum/)
+- [113. 路径总和 II](https://leetcode-cn.com/problems/path-sum-ii/)
+- [437. 路径总和 III](https://leetcode-cn.com/problems/path-sum-iii/)
+- [666. 路径和 IV](https://leetcode-cn.com/problems/path-sum-iv/)
+- [124. 二叉树中的最大路径和](https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/)
+- [129. 求根到叶子节点数字之和](https://leetcode-cn.com/problems/sum-root-to-leaf-numbers/)
 
 # 广度优先搜索BFS
 - [934. 最短的桥](https://leetcode-cn.com/problems/shortest-bridge/)
