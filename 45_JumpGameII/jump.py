@@ -1,3 +1,4 @@
+# 贪心： 每次跳到下一次能够跳的最远的点
 class Solution:
     def jump(self, nums: List[int]) -> int:
         steps = 0
