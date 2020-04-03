@@ -171,6 +171,10 @@
 - [221.最大正方形](https://leetcode-cn.com/problems/maximal-square/)
 - [562. 矩阵中最长的连续1线段](https://leetcode-cn.com/problems/longest-line-of-consecutive-one-in-matrix/)
 
+### 其他二维动态规划
+- [871. 最低加油次数](https://leetcode-cn.com/problems/minimum-number-of-refueling-stops/)
+- [115. 不同的子序列](https://leetcode-cn.com/problems/distinct-subsequences/)
+
 ### 背包经典问题
 - [39.组合总和](https://leetcode-cn.com/problems/combination-sum/)
 - [40.组合总和 II](https://leetcode-cn.com/problems/combination-sum-ii/)
