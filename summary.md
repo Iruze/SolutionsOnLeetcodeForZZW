@@ -220,6 +220,7 @@
 - [60.第K个排列](https://leetcode-cn.com/problems/permutation-sequence/)
 - [77.组合](https://leetcode-cn.com/problems/combinations/)
 - [31.下一个排列](https://leetcode-cn.com/problems/next-permutation/)
+- [216.组合总和 III](https://leetcode-cn.com/problems/combination-sum-iii/)
 
 
 # 栈
