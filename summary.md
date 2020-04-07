@@ -301,7 +301,7 @@
 - [124. 二叉树中的最大路径和](https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/)
 - [129. 求根到叶子节点数字之和](https://leetcode-cn.com/problems/sum-root-to-leaf-numbers/)
 
-# 广度优先搜索BFS
+# 广度优先搜索BFS/深度优先搜索DFS
 - [934. 最短的桥](https://leetcode-cn.com/problems/shortest-bridge/)
 - [994. 腐烂的橘子](https://leetcode-cn.com/problems/rotting-oranges/)
 - [286. 墙与门](https://leetcode-cn.com/problems/walls-and-gates/)
@@ -311,6 +311,8 @@
 - [695. 岛屿的最大面积](https://leetcode-cn.com/problems/max-area-of-island/)
 - [463. 岛屿的周长](https://leetcode-cn.com/problems/island-perimeter/)
 - [711. 不同岛屿的数量II](https://leetcode-cn.com/problems/number-of-distinct-islands-ii/)
+### 带边界条件的
+- [1254. 统计封闭岛屿的数目](https://leetcode-cn.com/problems/number-of-closed-islands/)
 
 
 # 字典树/前缀树
