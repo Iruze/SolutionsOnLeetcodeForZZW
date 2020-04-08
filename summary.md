@@ -352,6 +352,12 @@
 ### 回文
 - [680. 验证回文字符串 Ⅱ](https://leetcode-cn.com/problems/valid-palindrome-ii/)
 
+# 数据结构设计类
+### 哈希集合/哈希映射
+- [705. 设计哈希集合](https://leetcode-cn.com/problems/design-hashset/)
+- [706. 设计哈希映射](https://leetcode-cn.com/problems/design-hashmap/)
+
+
 # shell脚本
 - [192. 统计词频](https://leetcode-cn.com/problems/word-frequency/)
 
