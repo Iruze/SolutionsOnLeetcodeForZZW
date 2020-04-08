@@ -313,6 +313,7 @@
 - [711. 不同岛屿的数量II](https://leetcode-cn.com/problems/number-of-distinct-islands-ii/)
 ### 带边界条件的
 - [1254. 统计封闭岛屿的数目](https://leetcode-cn.com/problems/number-of-closed-islands/)
+- [1162. 地图分析](https://leetcode-cn.com/problems/as-far-from-land-as-possible/)
 
 
 # 字典树/前缀树
