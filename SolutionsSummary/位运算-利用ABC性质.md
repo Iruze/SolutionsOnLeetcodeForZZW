@@ -25,16 +25,20 @@ C ^ A = B
 ```
 
 ```python3
+"""
+我们不关心是哪两个数的XOR得到的最大值，只是从第31位到0位，逐位假设当前位是1；
+利用 <若 A^B=C， 则 C^A=B> 性质，如果不能得到C^A=B，者证明当前位是0
+"""
 class Solution:
     def findMaximumXOR(self, nums: List[int]) -> int:
         mask = 0
         ans = 0
         for i in range(31, -1, -1):
             mask |= (1 << i)
-            s = set()
+            s = set()                   # s用来存储各个数(32位表示)的前i个前缀
             for num in nums:
                 s.add(mask & num)
-            temp = ans | (1 << i)
+            temp = ans | (1 << i)       # 假设ans此时i位上是1
             for prefix in s:
                 if temp ^ prefix in s:
                     ans = temp
