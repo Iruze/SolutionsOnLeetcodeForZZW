@@ -318,6 +318,7 @@
 
 # 字典树/前缀树
 - [820. 单词的压缩编码](https://leetcode-cn.com/problems/short-encoding-of-words/)
+- [面试题 16.02. 单词频率](https://leetcode-cn.com/problems/words-frequency-lcci/)
 
 
 # 数学方法
