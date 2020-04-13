@@ -327,6 +327,7 @@
 ### 丑数
 - [263. 丑数](https://leetcode-cn.com/problems/ugly-number/)
 - [264. 丑数II](https://leetcode-cn.com/problems/ugly-number-ii/)
+- [面试题 17.09. 第 k 个数](https://leetcode-cn.com/problems/get-kth-magic-number-lcci/)
 - [1201. 丑数III](https://leetcode-cn.com/problems/ugly-number-iii/)
 - [507. 完美数](https://leetcode-cn.com/problems/perfect-number/)
 ### 水壶问题(裴蜀定理)
