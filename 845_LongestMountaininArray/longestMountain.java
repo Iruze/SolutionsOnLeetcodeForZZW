@@ -4,6 +4,8 @@
  * @param A
  * @return
  */
+// ref: 
+// https://leetcode-cn.com/problems/longest-mountain-in-array/solution/leetcode-shan-feng-shu-zu-san-ti-by-a-fei-8/
 public int longestMountain(int[] A) {
     if (A == null || A.length < 3) {
         return 0;
