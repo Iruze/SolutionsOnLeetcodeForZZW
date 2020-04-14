@@ -15,6 +15,10 @@
 - [75.颜色分类](https://leetcode-cn.com/problems/sort-colors/)
 - [259. 较小的三数之和](https://leetcode-cn.com/problems/3sum-smaller/)
 - [415. 字符串相加](https://leetcode-cn.com/problems/add-strings/solution/add-strings-shuang-zhi-zhen-fa-by-jyd/)
+##### 山脉数组
+- [941. 有效的山脉数组](https://leetcode-cn.com/problems/valid-mountain-array/)
+- [852. 山脉数组的峰顶索引](https://leetcode-cn.com/problems/peak-index-in-a-mountain-array/)
+- [845. 数组中的最长山脉](https://leetcode-cn.com/problems/longest-mountain-in-array/)
 
 ### 区间合并/重叠区间
 - [56.合并区间](https://leetcode-cn.com/problems/merge-intervals/)
