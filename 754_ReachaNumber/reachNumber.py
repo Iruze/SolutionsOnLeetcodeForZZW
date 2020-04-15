@@ -14,6 +14,8 @@
 
 max(f(n)) = max(f(n-1)) + n
 f(n) = [max(f(n)),  max(f(n)) - 2, max(f(n)) - 4, ....]
+
+如果target可以在第n步达到，那么target一定小于等于max(f(n))且max(f(n))与taget同奇同偶。
 """
 
 class Solution:
