@@ -76,6 +76,7 @@
 - [209. 长度最小的子数组](https://leetcode-cn.com/problems/minimum-size-subarray-sum/)
 - [325. 和等于 k 的最长子数组长度](https://leetcode-cn.com/problems/maximum-size-subarray-sum-equals-k/)
 - [525. 连续数组](https://leetcode-cn.com/problems/contiguous-array/)
+- [523. 连续的子数组和](https://leetcode-cn.com/problems/continuous-subarray-sum/)
 ###### 前缀和+归并
 - [327. 区间和的个数](https://leetcode-cn.com/problems/count-of-range-sum/)
 - [315. 计算右侧小于当前元素的个数](https://leetcode-cn.com/problems/count-of-smaller-numbers-after-self/)
