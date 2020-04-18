@@ -340,6 +340,7 @@
 - [365. 水壶问题](https://leetcode-cn.com/problems/water-and-jug-problem/)
 ### 约瑟夫环
 - [面试题62. 圆圈中最后剩下的数字](https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/)
+- [390. 消除游戏](https://leetcode-cn.com/problems/elimination-game/solution/mei-ri-suan-fa-day-85-tu-jie-suan-fa-yi-xing-dai-m/)
 
 ### 模拟加法+乘法
 - [67. 二进制求和](https://leetcode-cn.com/problems/add-binary/)
