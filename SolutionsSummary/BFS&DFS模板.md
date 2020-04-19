@@ -43,7 +43,8 @@ while d:
 
 **单源和多源的区别：**
 <details>
-  <summary>展开</summary>
+<summary>展开</summary>
+  
 - 单源按个遍历源，每个源调用一次bfs()        
   多源先所有源入队，紧接着直接 **出队-入队** 广度搜索；
 
@@ -51,6 +52,8 @@ while d:
   多源bfs写在当前函数内
   
 </details>
+
+
 # 例题
 
 **【模板一】**
