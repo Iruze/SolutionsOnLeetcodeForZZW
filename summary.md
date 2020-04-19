@@ -366,6 +366,9 @@
 - [705. 设计哈希集合](https://leetcode-cn.com/problems/design-hashset/)
 - [706. 设计哈希映射](https://leetcode-cn.com/problems/design-hashmap/)
 
+# 并查集
+- [547. 朋友圈](https://leetcode-cn.com/problems/friend-circles/)
+- [990. 等式方程的可满足性](https://leetcode-cn.com/problems/satisfiability-of-equality-equations/)
 
 # shell脚本
 - [192. 统计词频](https://leetcode-cn.com/problems/word-frequency/)
