@@ -41,6 +41,14 @@ while d:
     ...
 ```
 
+[1](./相关的图/bfs-海洋.png)
+
+(**ps:** 最后一次出队的值表示了bfs最终的扩散轮次！)
+
+参考：
+  -[简单Java, 秒懂图的BFS～](https://leetcode-cn.com/problems/as-far-from-land-as-possible/solution/jian-dan-java-miao-dong-tu-de-bfs-by-sweetiee/)
+  
+
 **单源和多源的区别：**
 <details>
 <summary>展开</summary>
