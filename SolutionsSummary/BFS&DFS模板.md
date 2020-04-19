@@ -152,3 +152,4 @@ class Solution:
 ```
 其他：   
 -[1162. 地图分析](https://leetcode-cn.com/problems/as-far-from-land-as-possible/)
+- [934. 最短的桥](https://leetcode-cn.com/problems/shortest-bridge/)
