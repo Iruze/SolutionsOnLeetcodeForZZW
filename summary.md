@@ -350,6 +350,9 @@
 - [223. Rectangle Area](https://leetcode-cn.com/problems/rectangle-area/)
 - [836. 矩形重叠](https://leetcode-cn.com/problems/rectangle-overlap/submissions/)
 
+### 高效的幂运算
+- [372. 超级次方](https://leetcode-cn.com/problems/super-pow/)
+
 ### 数学其他
 - [7. 整数反转](https://leetcode-cn.com/problems/reverse-integer/submissions/)
 - [50. Pow(x, n)](https://leetcode-cn.com/problems/powx-n/)
