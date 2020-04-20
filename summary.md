@@ -390,3 +390,7 @@
 - [182. 查找重复的电子邮箱](https://leetcode-cn.com/problems/duplicate-emails/)
 - [1098. 小众书籍](https://leetcode-cn.com/problems/unpopular-books/)
 - [178. 分数排名](https://leetcode-cn.com/problems/rank-scores/)
+- [数据库leetcode题目汇总](https://leetcode-cn.com/circle/article/vGr1Mc/)
+
+# 操作系统
+- [1115. 交替打印FooBar](https://leetcode-cn.com/problems/print-foobar-alternately/)
