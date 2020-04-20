@@ -376,6 +376,8 @@
 
 # 脑筋急转弯
 - [292. Nim 游戏](https://leetcode-cn.com/problems/nim-game/)
+- [319. 灯泡开关](https://leetcode-cn.com/problems/bulb-switcher/)
+- [877. 石子游戏](https://leetcode-cn.com/problems/stone-game/)
 
 # MySQL
 - [1082. 销售分析I](https://leetcode-cn.com/problems/sales-analysis-i)
