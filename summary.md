@@ -57,6 +57,7 @@
 - [169.求众数](https://leetcode-cn.com/problems/majority-element/)
 - [229.求众数II](https://leetcode-cn.com/problems/majority-element-ii/)
 - [1150. 检查一个数是否在数组中占绝大多数](https://leetcode-cn.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/)
+- [334. 递增的三元子序列](https://leetcode-cn.com/problems/increasing-triplet-subsequence/)
 
 ### 最大矩形/接雨水/柱状图中最大矩形
 - [42.接雨水](https://leetcode-cn.com/problems/trapping-rain-water/)
