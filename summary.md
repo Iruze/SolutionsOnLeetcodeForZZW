@@ -249,6 +249,8 @@
 - [739. 每日温度](https://leetcode-cn.com/problems/daily-temperatures/)
 - [面试题59 - II. 队列的最大值](https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof/)
 - [面试题59 - I](https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof)
+- [962. 最大宽度坡](https://leetcode-cn.com/problems/maximum-width-ramp/)
+
 ### 栈设计类
 - [155. 最小栈](https://leetcode-cn.com/problems/min-stack/)
 - [716. 最大栈](https://leetcode-cn.com/problems/max-stack/)
