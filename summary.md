@@ -371,6 +371,9 @@
 - [65. 有效数字](https://leetcode-cn.com/problems/valid-number/)
 ### 回文
 - [680. 验证回文字符串 Ⅱ](https://leetcode-cn.com/problems/valid-palindrome-ii/)
+### 编辑距离
+- [72. 编辑距离](https://leetcode-cn.com/problems/edit-distance/)
+- [161. 相隔为 1 的编辑距离](https://leetcode-cn.com/problems/one-edit-distance/)
 
 # 数据结构设计类
 ### 哈希集合/哈希映射
