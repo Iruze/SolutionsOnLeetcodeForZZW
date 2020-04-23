@@ -1,3 +1,9 @@
+"""
+list数组模拟整条蛇
+1. 计算下一个蛇头；
+2. 当前蛇尾弹出，insert更新新的蛇头
+"""
+
 class SnakeGame:
 
     def __init__(self, width: int, height: int, food: List[List[int]]):
