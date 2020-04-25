@@ -14,3 +14,18 @@ class Solution:
         while num > 40:
             num = (rand7() - 1) * 7 + rand7()
         return (num - 1) % 10 + 1
+
+"""
+# 扩展：rand10 -> rand7()
+
+class Solution:
+    def rand10(self):
+        """
+        :rtype: int
+        """
+        num = rand10()
+        while num > 7:
+            num = rand10()
+        return num
+        
+"""
