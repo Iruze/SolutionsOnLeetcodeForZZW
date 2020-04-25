@@ -1,3 +1,11 @@
+# **这类排列问题一般是三类：**
+* 全排列
+* 下一个排列
+* 第k个排列
+
+这里着重关注 **下一个排列** 和 **第k个排列**
+## 下一个排列/更大的元素
+
 - [31. 下一个排列](https://leetcode-cn.com/problems/next-permutation/)
 > 实现获取下一个排列的函数，算法需要将给定数字序列重新排列成字典序中下一个更大的排列。    
 > 如果不存在下一个更大的排列，则将数字重新排列成最小的排列（即升序排列）。     
@@ -71,4 +79,68 @@ class Solution:
         nums[front+1:] = nums[front+1:][::-1]
         n_new = int(''.join(nums))
         return n_new if n_new > n and n_new < pow(2, 31) else -1
+```
+
+## 第k个排列
+- [60. 第k个排列](https://leetcode-cn.com/problems/permutation-sequence/)
+- [386. 字典序排数](https://leetcode-cn.com/problems/lexicographical-numbers/)
+- [440. 字典序的第K小数字](https://leetcode-cn.com/problems/k-th-smallest-in-lexicographical-order/)
+
+解题思路： **回溯 + 剪枝**
+
+- [60. 第k个排列](https://leetcode-cn.com/problems/permutation-sequence/)
+> 给出集合 [1,2,3,…,n]，其所有元素共有 n! 种排列。      
+按大小顺序列出所有排列情况，并一一标记，当 n = 3 时, 所有排列如下：
+```
+"123"
+"132"
+"213"
+"231"
+"312"
+"321"
+```
+> 给定 `n` 和 `k`，返回第 `k` 个排列。
+
+说明：
+```
+给定 n 的范围是 [1, 9]。
+给定 k 的范围是[1,  n!]。
+```
+示例 1:
+```
+输入: n = 3, k = 3
+输出: "213"
+```
+
+解法：(参考- [深度优先遍历 + 剪枝、双链表模拟](https://leetcode-cn.com/problems/permutation-sequence/solution/hui-su-jian-zhi-python-dai-ma-java-dai-ma-by-liwei/))
+
+```python3
+class Solution:
+    def getPermutation(self, n: int, k: int) -> str:
+        """
+        比如在1234中找第 9 个数：‘2314’
+        """
+        def dfs(n, k, pre=[], depth=0):
+            if depth == n:
+                return ''.join(pre)
+            # 以depth=0为例，此时以1为前缀的数有 (4-1)! 个
+            ps = count(n - 1 - depth)
+            for i in range(n):
+                if not visited[i]:
+                    # 3! < 9，说明肯定不是以1为前缀，从1后面的234中重新选
+                    if ps < k:
+                        # 去掉了以1为前缀的分支，那个分支共有 3! 个数
+                        k -= ps
+                        continue
+                    # 是当前的2为前缀的分支, 加入结果集，当前层over
+                    pre.append(str(i + 1))
+                    visited[i] = True
+                    # 下一层递归
+                    return dfs(n, k, pre, depth + 1)
+        # 尾递归求 n!
+        def count(n, res=1):
+            return res if n == 0 or n == 1 else count(n - 1, res * n)
+        
+        visited = [False for _ in range(n)]
+        return dfs(n, k)
 ```
