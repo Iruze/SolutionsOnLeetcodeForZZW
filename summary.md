@@ -415,3 +415,4 @@
 # 操作系统
 - [1115. 交替打印FooBar](https://leetcode-cn.com/problems/print-foobar-alternately/)
 - [1116. 打印零与奇偶数](https://leetcode-cn.com/problems/print-zero-even-odd/)
+- [1195. 交替打印字符串](https://leetcode-cn.com/problems/fizz-buzz-multithreaded/)
