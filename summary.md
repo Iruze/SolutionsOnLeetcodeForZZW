@@ -80,6 +80,7 @@
 - [523. 连续的子数组和](https://leetcode-cn.com/problems/continuous-subarray-sum/)
 ###### 滑动窗口
 - [424. 替换后的最长重复字符](https://leetcode-cn.com/problems/longest-repeating-character-replacement/)
+- [395. 至少有K个重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-with-at-least-k-repeating-characters/)
 - [leetcode刷题总结之滑动窗口](https://blog.csdn.net/qq_43152052/article/details/102840715) 
  
 ###### 前缀和+归并
