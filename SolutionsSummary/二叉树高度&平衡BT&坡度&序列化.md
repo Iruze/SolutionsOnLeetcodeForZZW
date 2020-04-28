@@ -145,3 +145,45 @@ class Solution:
         tilt(root)
         return self.tilt
 ```
+
+### 二叉树的序列化
+- [652. 寻找重复的子树](https://leetcode-cn.com/problems/find-duplicate-subtrees/)
+> 给定一棵二叉树，返回所有重复的子树。对于同一类的重复子树，你只需要返回其中任意一棵的根结点即可。          
+两棵树重复是指它们具有相同的结构以及相同的结点值。
+
+```python3
+class Solution(object):
+    def findDuplicateSubtrees(self, root):
+        count = collections.Counter()
+        ans = []
+        def collect(node):
+            # 前序遍历
+            if not node: return "#"
+            serial = "{},{},{}".format(node.val, collect(node.left), collect(node.right))
+            
+            # 这边三句是在前序遍历中，捎带统计序列化
+            # 去掉这三句则是前序遍历
+            count[serial] += 1
+            if count[serial] == 2:
+                ans.append(node)
+            
+            # 返回捎带计算的结果
+            return serial
+
+        collect(root)
+        return ans
+
+# 序列化二叉树的步骤
+"""
+def collect(node):
+    if not node: return "#"
+    serial = "{},{},{}".format(node.val, collect(node.left), collect(node.right))
+    return serial
+    
+其中
+    count[serial] += 1
+    if count[serial] == 2:
+        ans.append(node)
+才是顺带求取
+"""
+```
