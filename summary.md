@@ -201,6 +201,8 @@
 - [518.零钱兑换 II](https://leetcode-cn.com/problems/coin-change-2/)
 - [416. 分割等和子集](https://leetcode-cn.com/problems/partition-equal-subset-sum/)
 - [139. 单词拆分](https://leetcode-cn.com/problems/word-break)
+- [474. 一和零](https://leetcode-cn.com/problems/ones-and-zeroes/)
+- [1049. 最后一块石头的重量 II](https://leetcode-cn.com/problems/last-stone-weight-ii/)
 
 ### 打家劫舍
 - [198. 打家劫舍](https://leetcode-cn.com/problems/house-robber/)
