@@ -78,6 +78,7 @@
 - [325. 和等于 k 的最长子数组长度](https://leetcode-cn.com/problems/maximum-size-subarray-sum-equals-k/)
 - [525. 连续数组](https://leetcode-cn.com/problems/contiguous-array/)
 - [523. 连续的子数组和](https://leetcode-cn.com/problems/continuous-subarray-sum/)
+- [862. 和至少为 K 的最短子数组](https://leetcode-cn.com/problems/shortest-subarray-with-sum-at-least-k/)
 ###### 滑动窗口
 - [424. 替换后的最长重复字符](https://leetcode-cn.com/problems/longest-repeating-character-replacement/)
 - [395. 至少有K个重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-with-at-least-k-repeating-characters/)
