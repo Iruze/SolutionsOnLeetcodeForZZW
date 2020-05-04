@@ -52,6 +52,8 @@
 - [153. 寻找旋转排序数组中的最小值](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/)
 - [154. 寻找旋转排序数组中的最小值 II](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array-ii/)
 - [875. 爱吃香蕉的珂珂](https://leetcode-cn.com/problems/koko-eating-bananas/)
+###### 高级二分搜索应用
+- [410. 分割数组的最大值](https://leetcode-cn.com/problems/split-array-largest-sum/)
 
 ### 众数
 - [169.求众数](https://leetcode-cn.com/problems/majority-element/)
