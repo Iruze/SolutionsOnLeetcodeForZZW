@@ -104,6 +104,14 @@
 - [746.使用最小花费爬楼梯](https://leetcode-cn.com/problems/min-cost-climbing-stairs/)
 - [873.最长的斐波那契子序列的长度](https://leetcode-cn.com/problems/length-of-longest-fibonacci-subsequence/)
 - [717.1比特与2比特字符](https://leetcode-cn.com/problems/1-bit-and-2-bit-characters/)
+### 跳跃游戏汇总(有的未必用dp解法)
+- [55.跳跃游戏](https://leetcode-cn.com/problems/jump-game/)
+- [45.跳跃游戏 II](https://leetcode-cn.com/problems/jump-game-ii/)
+- [1306. 跳跃游戏 III](https://leetcode-cn.com/problems/jump-game-iii/)
+- [1345. 跳跃游戏 IV](https://leetcode-cn.com/problems/jump-game-iv/)
+- [1340. 跳跃游戏 V](https://leetcode-cn.com/problems/jump-game-v/)
+- [403. 青蛙过河](https://leetcode-cn.com/problems/frog-jump/)
+- [LCP 09. 最小跳跃次数](https://leetcode-cn.com/problems/zui-xiao-tiao-yue-ci-shu/)
 
 ### 数组嵌套、数组中重复的数
 - [41. 缺失的第一个正数](https://leetcode-cn.com/problems/first-missing-positive/)
