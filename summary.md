@@ -334,6 +334,10 @@
 - [695. 岛屿的最大面积](https://leetcode-cn.com/problems/max-area-of-island/)
 - [463. 岛屿的周长](https://leetcode-cn.com/problems/island-perimeter/)
 - [711. 不同岛屿的数量II](https://leetcode-cn.com/problems/number-of-distinct-islands-ii/)
+
+### 非图类的bfs
+- [1345. 跳跃游戏 IV](https://leetcode-cn.com/problems/jump-game-iv/)
+
 ### 带边界条件的
 - [1254. 统计封闭岛屿的数目](https://leetcode-cn.com/problems/number-of-closed-islands/)
 - [1162. 地图分析](https://leetcode-cn.com/problems/as-far-from-land-as-possible/)
