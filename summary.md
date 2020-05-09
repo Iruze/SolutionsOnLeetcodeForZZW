@@ -297,6 +297,9 @@
 - [347. 前 K 个高频元素](https://leetcode-cn.com/problems/top-k-frequent-elements/)
 - [703. 数据流中的第K大元素](https://leetcode-cn.com/problems/kth-largest-element-in-a-stream/)
 
+### 桶排序
+- [164. 最大间距](https://leetcode-cn.com/problems/maximum-gap/)
+
 
 # 链表
 ### 链表合并/求和
