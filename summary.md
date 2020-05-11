@@ -239,6 +239,13 @@
 - [712. 两个字符串的最小ASCII删除和](https://leetcode-cn.com/problems/minimum-ascii-delete-sum-for-two-strings/)
 - [72. 编辑距离](https://leetcode-cn.com/problems/edit-distance/)
 
+### 区间dp
+- [5. 最长回文子串](https://leetcode-cn.com/problems/longest-palindromic-substring/)
+- [516. 最长回文子序列](https://leetcode-cn.com/problems/longest-palindromic-subsequence/)
+- [312. 戳气球](https://leetcode-cn.com/problems/burst-balloons/)
+- [1246. 删除回文子数组](https://leetcode-cn.com/problems/palindrome-removal/)
+- [87. 扰乱字符串](https://leetcode-cn.com/problems/scramble-string/)
+
 ### 数学拆分/被x整除的最大和的dp
 - [343. 整数拆分](https://leetcode-cn.com/problems/integer-break/)
 - [1262. 可被三整除的最大和](https://leetcode-cn.com/problems/greatest-sum-divisible-by-three/)
