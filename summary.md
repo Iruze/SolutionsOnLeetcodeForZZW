@@ -228,8 +228,11 @@
 ### 最长子序列（动态规划）
 - [674.最长连续递增序列](https://leetcode-cn.com/problems/longest-continuous-increasing-subsequence/)
 - [673.最长递增子序列的个数](https://leetcode-cn.com/problems/number-of-longest-increasing-subsequence/)
-- [300.最长上升子序列](https://leetcode-cn.com/problems/longest-increasing-subsequence/) 
-- [368. 最大整除子集](https://leetcode-cn.com/problems/largest-divisible-subset/)
+- [300.最长上升子序列](https://leetcode-cn.com/problems/longest-increasing-subsequence/)       
+- [354. 俄罗斯套娃信封问题](https://leetcode-cn.com/problems/russian-doll-envelopes/)
+- [面试题 08.13. 堆箱子](https://leetcode-cn.com/problems/pile-box-lcci/)     
+- [面试题 17.08. 马戏团人塔](https://leetcode-cn.com/problems/circus-tower-lcci/)       
+- [368. 最大整除子集](https://leetcode-cn.com/problems/largest-divisible-subset/)    
 
 ### 最长公共子序列/子数组
 - [1143. 最长公共子序列](https://leetcode-cn.com/problems/longest-common-subsequence)
