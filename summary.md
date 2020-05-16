@@ -31,6 +31,7 @@
 - [253.会议室 II](https://leetcode-cn.com/problems/meeting-rooms-ii/)
 - [452.用最少数量的箭引爆气球](https://leetcode-cn.com/problems/minimum-number-of-arrows-to-burst-balloons/)
 - [354.俄罗斯套娃信封问题](https://leetcode-cn.com/problems/russian-doll-envelopes/)
+- [1235. 规划兼职工作](https://leetcode-cn.com/problems/maximum-profit-in-job-scheduling/)
 
 ### 区间加减法
 - [795.区间子数组个数](https://leetcode-cn.com/problems/number-of-subarrays-with-bounded-maximum/)
