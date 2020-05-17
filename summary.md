@@ -286,11 +286,6 @@
 - [面试题59 - I](https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof)
 - [962. 最大宽度坡](https://leetcode-cn.com/problems/maximum-width-ramp/)
 
-### 栈设计类
-- [155. 最小栈](https://leetcode-cn.com/problems/min-stack/)
-- [716. 最大栈](https://leetcode-cn.com/problems/max-stack/)
-- [面试题 03.04. 化栈为队](https://leetcode-cn.com/problems/implement-queue-using-stacks-lcci/)
-- [895. 最大频率栈](https://leetcode-cn.com/problems/maximum-frequency-stack/)
 
 # 排序
 ### 第k大的元素（partition函数）/topK问题
@@ -414,12 +409,20 @@
 - [161. 相隔为 1 的编辑距离](https://leetcode-cn.com/problems/one-edit-distance/)
 
 # 数据结构设计类
+### 栈设计类
+- [155. 最小栈](https://leetcode-cn.com/problems/min-stack/)
+- [716. 最大栈](https://leetcode-cn.com/problems/max-stack/)
+- [面试题 03.04. 化栈为队](https://leetcode-cn.com/problems/implement-queue-using-stacks-lcci/)
+- [895. 最大频率栈](https://leetcode-cn.com/problems/maximum-frequency-stack/)
+
 ### 哈希集合/哈希映射
 - [705. 设计哈希集合](https://leetcode-cn.com/problems/design-hashset/)
 - [706. 设计哈希映射](https://leetcode-cn.com/problems/design-hashmap/)
 
-### 其他设计
+### 其他设计-交换末尾和目标元素
 - [284. 顶端迭代器](https://leetcode-cn.com/problems/peeking-iterator/)
+- [381. O(1) 时间插入、删除和获取随机元素 - 允许重复](https://leetcode-cn.com/problems/insert-delete-getrandom-o1-duplicates-allowed/)
+
 
 # 并查集
 - [547. 朋友圈](https://leetcode-cn.com/problems/friend-circles/)
