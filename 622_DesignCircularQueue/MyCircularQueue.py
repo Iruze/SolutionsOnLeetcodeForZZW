@@ -52,6 +52,8 @@ class MyCircularQueue:
         """
         if self.isEmpty():
             return -1
+        # 当 self.rear = 0，尾部元素应该是 self.arr[-1]，即是 self.arr[self.capacity - 1]
+        # 故而，这里需要 +self.capacity
         return self.arr[(self.rear - 1 + self.capacity) % self.capacity]
         
 
