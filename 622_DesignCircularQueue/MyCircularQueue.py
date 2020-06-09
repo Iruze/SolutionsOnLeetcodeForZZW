@@ -1,5 +1,8 @@
 """
 故意留一个空间，用来区分为满和为空；
+参考：
+- 数组实现的循环队列:
+https://leetcode-cn.com/problems/design-circular-queue/solution/shu-zu-shi-xian-de-xun-huan-dui-lie-by-liweiwei141/
 """
 
 class MyCircularQueue:
