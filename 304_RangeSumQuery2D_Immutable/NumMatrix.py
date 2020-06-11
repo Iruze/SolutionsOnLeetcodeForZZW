@@ -1,7 +1,10 @@
 """
 类似于前缀和，求完所有的[0, 0]-[i, j]矩形上的总和：则
 
-result = SUM([0, 0]-[row2, col2]) - SUM([0, 0] - [row1 - 1, col2]) - SUM([0, 0] - [row2, col1 - 1]) + SUM([0, 0] - [row1 - 1, col1 - 1])
+result = SUM([0, 0]-[row2, col2]) 
+       - SUM([0, 0] - [row1 - 1, col2]) 
+       - SUM([0, 0] - [row2, col1 - 1]) 
+       + SUM([0, 0] - [row1 - 1, col1 - 1])
 """
 
 class NumMatrix:
