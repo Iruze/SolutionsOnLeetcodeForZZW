@@ -430,6 +430,7 @@
 # 并查集
 - [547. 朋友圈](https://leetcode-cn.com/problems/friend-circles/)
 - [990. 等式方程的可满足性](https://leetcode-cn.com/problems/satisfiability-of-equality-equations/)
+- [721. 账户合并](https://leetcode-cn.com/problems/accounts-merge/)
 
 # shell脚本
 - [192. 统计词频](https://leetcode-cn.com/problems/word-frequency/)
