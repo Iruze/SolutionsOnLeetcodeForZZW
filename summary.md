@@ -328,6 +328,8 @@
 - [415. 字符串相加](https://leetcode-cn.com/problems/add-strings/solution/add-strings-shuang-zhi-zhen-fa-by-jyd/)
 - [67. 二进制求和](https://leetcode-cn.com/problems/add-binary/)
 - [989. 数组形式的整数加法](https://leetcode-cn.com/problems/add-to-array-form-of-integer/)
+#### 链表中的删除问题
+- [1171. 从链表中删去总和值为零的连续节点](https://leetcode-cn.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/)
 
 # 二叉树
 ### 二叉树遍历（递归&迭代）
