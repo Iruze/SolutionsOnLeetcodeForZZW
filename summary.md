@@ -436,6 +436,8 @@
 
 # 图
 - [399. 除法求值](https://leetcode-cn.com/problems/evaluate-division/)
+### 无向图 + DFS
+- [886. 可能的二分法](https://leetcode-cn.com/problems/possible-bipartition/)
 
 # 并查集
 - [547. 朋友圈](https://leetcode-cn.com/problems/friend-circles/)
