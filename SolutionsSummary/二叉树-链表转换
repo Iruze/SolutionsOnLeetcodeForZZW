@@ -1,0 +1,46 @@
+# 解题思想
+### 转换类型
+- 二叉搜索树　->　链表
+<details>
+<summary>解题思路</summary>
+* 求出左分支的头结点
+* 从左分支的头结点开始，遍历寻找到根节点root
+* 左分支和根节点连接，还原左分支的头结点
+* 递归作业右分支
+</details>
+
+# 例题
+### I). 二叉搜索树　-> 链表
+- [面试题 17.12. BiNode](https://leetcode-cn.com/problems/binode-lcci/)
+> 二叉树数据结构TreeNode可用来表示单向链表（其中left置空，right为下一个链表节点）。实现一个方法，把二叉搜索树转换为单向链表，要求依然符合二叉搜索树的性质，转换操作应是原址的，也就是在原始的二叉搜索树上直接修改。     
+返回转换后的单向链表的头节点。     
+注意：本题相对原题稍作改动
+
+示例：
+```shell
+输入： [4,2,5,1,3,null,6,0]
+输出： [0,null,1,null,2,null,3,null,4,null,5,null,6]
+```
+解题法:
+```python3
+class Solution:
+    def convertBiNode(self, root: TreeNode) -> TreeNode:
+        if not root:
+            return None
+        # 中序遍历思想：求出左分支的头结点
+        head = self.convertBiNode(root.left)
+        if not head:
+            head = root
+        else:
+            tmp = head
+            # 左分支连接到根节点root
+            while head.right:
+                head = head.right
+            head.right = root
+            # 恢复保留的头结点
+            head = tmp
+        # 从根节点开始，递归连接右分支
+        root.left = None
+        root.right = self.convertBiNode(root.right)
+        return head
+```
