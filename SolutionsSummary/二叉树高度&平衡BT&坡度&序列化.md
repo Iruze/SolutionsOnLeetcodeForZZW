@@ -146,6 +146,44 @@ class Solution:
         return self.tilt
 ```
 
+### 二叉树中不相邻节点的最大总和
+**实质就是：　打家劫舍III，跟上面的内置函数tilt()一样，在求root当前节点的同时还做了其他的事情**
+  - [337. 打家劫舍 III](https://leetcode-cn.com/problems/house-robber-iii/)
+  > 在上次打劫完一条街道之后和一圈房屋后，小偷又发现了一个新的可行窃的地区。这个地区只有一个入口，我们称之为“根”。 除了“根”之外，每栋房子有且只有一个“父“房子与之相连。一番侦察之后，聪明的小偷意识到“这个地方的所有房屋的排列类似于一棵二叉树”。 如果两个直接相连的房子在同一天晚上被打劫，房屋将自动报警。       
+计算在不触动警报的情况下，小偷一晚能够盗取的最高金额。         
+
+示例 1:
+```
+输入: [3,2,3,null,3,null,1]
+
+     3
+    / \
+   2   3
+    \   \ 
+     3   1
+
+输出: 7 
+解释: 小偷一晚能够盗取的最高金额 = 3 + 3 + 1 = 7.
+```
+```python3
+class Solution:
+    def rob(self, root: TreeNode) -> int:
+        def helper(root):
+            """
+            找到打劫root节点和不打劫root的总和: [不打劫, 打劫]
+            """
+            if not root: return [0, 0]
+            #　分别求左右节点打劫&不打劫的结果: [左不打劫, 左打劫], [右不打劫, 右打劫]
+            l, r = helper(root.left), helper(root.right)
+            #　root不打劫 = 左打劫 + 右打劫
+            #  root打劫 = root.val + 左不打劫 + 右不打劫
+            #  故, 返回 [root不打劫, root打劫]
+            return [max(l) + max(r), root.val + l[0] + r[0]]
+        # 最终结果取 [root不打劫, root打劫] 的最大值
+        return max(helper(root))
+```
+
+
 ### 二叉树的序列化
 - [652. 寻找重复的子树](https://leetcode-cn.com/problems/find-duplicate-subtrees/)
 > 给定一棵二叉树，返回所有重复的子树。对于同一类的重复子树，你只需要返回其中任意一棵的根结点即可。          
