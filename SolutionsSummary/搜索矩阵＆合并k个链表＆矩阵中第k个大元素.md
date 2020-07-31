@@ -60,7 +60,7 @@ k = 8,
 ```
 
 ```python3
-# 方法一：　堆排序
+# 方法一：　堆排序, O(klogn)
 class Solution:
     def kthSmallest(self, matrix: List[List[int]], k: int) -> int:
         hp = []
@@ -74,7 +74,7 @@ class Solution:
                 heapq.heappush(hp, (matrix[i][j + 1], i, j + 1))
             k -= 1
         return val
-# 方法二：　二分（非常规/二分变体）
+# 方法二：　二分（非常规/二分变体), O(m+n)*log(matrix[-1][-1]-matrix[0][0])
 class Solution:
     def kthSmallest(self, matrix: List[List[int]], k: int) -> int:
         def rank(num):
@@ -103,7 +103,7 @@ class Solution:
 该矩阵有三种形式:
 ### I. 严格递增
 **每一行最后一个元素小于下一行第一个元素**, 两种解法:
-- O(m * n)的解法：以 matrix[0][0] - matrix[-1][-1]　范围的元素作为区间[0, m * n - 1]，　运用二分查找
+- O(logmn)的解法：以 matrix[0][0] - matrix[-1][-1]　范围的元素作为区间[0, m * n - 1]，　运用二分查找
 - O(logm) + O(logn)的解法：先行二分，　再列二分;
 
 这里以为第二种解法为例
