@@ -194,7 +194,7 @@ class Solution:
                 c -= 1
         return False
 ```
-###III. 稀疏递增－每行递增(较少)
+### III. 稀疏递增－每行递增(较少)
 
 ## 其他类似题目:
 
