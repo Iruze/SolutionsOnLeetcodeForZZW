@@ -1,11 +1,11 @@
 # 多路有序合并/查找－堆排序
-** 特点： **　
+**特点:**　
 - 多平行的链表合并
 - 多行有序数组找到其中第k个元素
 
-** 例题 **
+**例题**
 - [23. 合并K个排序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists/)
-> 合并 k 个排序链表，返回合并后的排序链表。请分析和描述算法的复杂度。
+> 合并 `k` 个排序链表，返回合并后的排序链表。请分析和描述算法的复杂度。
 
 示例:
 ```
@@ -44,8 +44,8 @@ class Solution:
 ```
 
 - [378. 有序矩阵中第K小的元素](https://leetcode-cn.com/problems/kth-smallest-element-in-a-sorted-matrix/)
-> 给定一个 n x n 矩阵，其中每行和每列元素均按升序排序，找到矩阵中第 k 小的元素。     
-请注意，它是排序后的第 k 小元素，而不是第 k 个不同的元素。
+> 给定一个 `n x n` 矩阵，其中每行和每列元素均按升序排序，找到矩阵中第 `k` 小的元素。     
+请注意，它是排序后的第 `k` 小元素，而不是第 `k` 个不同的元素。
 
 示例：
 ```
@@ -101,13 +101,13 @@ class Solution:
 
 # 搜索矩阵
 该矩阵有三种形式:
-- 严格递增－每一行最后一个元素小于下一行第一个元素
-<details>
-<summary>　两种解法 </summary>
+### I. 严格递增
+**每一行最后一个元素小于下一行第一个元素**, 两种解法:
 - O(m * n)的解法：以 matrix[0][0] - matrix[-1][-1]　范围的元素作为区间[0, m * n - 1]，　运用二分查找
 - O(m) + O(n)的解法：先行二分，　再列二分;
+
 这里以为第二种解法为例
-** 例题 **
+**例题**
 - [74. 搜索二维矩阵](https://leetcode-cn.com/problems/search-a-2d-matrix/)
 ```shell
 编写一个高效的算法来判断 m x n 矩阵中，是否存在一个目标值。该矩阵具有如下特性：
@@ -154,11 +154,8 @@ class Solution:
         row_idx = binarySearch(matrix[col_idx], target)
         return True if matrix[col_idx][row_idx] == target else False
 ```
-</details>
-- 递增－每行递增，每列递增;
-<details>
-<summary> 解法－横竖搜索 </summary>
-**思想:** 从 **右上角** 或者 **左下角** 出发，横竖搜索
+### II. 递增－每行递增，每列递增;
+**思想:** 从 **右上角** 或者 **左下角** 出发，**横竖搜索**
 - [240. 搜索二维矩阵 II](https://leetcode-cn.com/problems/search-a-2d-matrix-ii/)
 ```shell
 编写一个高效的算法来搜索 m x n 矩阵 matrix 中的一个目标值 target。该矩阵具有以下特性：
@@ -197,11 +194,7 @@ class Solution:
                 c -= 1
         return False
 ```
-</details>
-- 稀疏递增－每行递增(较少)
-<details>
-<summary>  </summary>
-</details>
+###III. 稀疏递增－每行递增(较少)
 
-##### 其他类似题目:
+## 其他类似题目:
 
