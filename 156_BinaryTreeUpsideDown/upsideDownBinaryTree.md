@@ -1,3 +1,8 @@
+# 解题图示，二叉树翻转图示
+
+
+# 代码
+```python3
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, x):
@@ -18,3 +23,4 @@ class Solution:
         root.left.right = root
         root.left = root.right = None
         return new_root
+```
