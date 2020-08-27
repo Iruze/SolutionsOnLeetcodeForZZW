@@ -18,7 +18,7 @@ b). 从1开始双重循环
 c). 若 word1[i - 1] == word2[j - 1], 注意是第i, j个数组，故取i - 1, j - 1
        dp[i][j] = dp[i - 1][j - 1] + 1
     否则，dp[i][j] = max(dp[i - 1][j], dp[i][j - 1])
-
+```
 <details>
     <summary>代码</summary>
     
