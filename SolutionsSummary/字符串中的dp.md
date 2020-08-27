@@ -1,4 +1,4 @@
-# 一. <公共子序列/子数组> 二维系列
+# <公共子序列/子数组> 二维系列
 - [583. 两个字符串的删除操作](https://leetcode-cn.com/problems/delete-operation-for-two-strings/)
 > 给定两个单词 word1 和 word2，找到使得 word1 和 word2 相同所需的最小步数，每步可以删除任意一个字符串中的一个字符。
 
@@ -82,7 +82,7 @@ class Solution:
 - [72. 编辑距离](https://leetcode-cn.com/problems/edit-distance/)
 
 
-# 二. <最大上升子序列/最少未识别> 一维系列
+# <最大上升子序列/最少未识别> 一维系列
 - [300. 最长上升子序列](https://leetcode-cn.com/problems/longest-increasing-subsequence/)
 > 给定一个无序的整数数组，找到其中最长上升子序列的长度。
 
