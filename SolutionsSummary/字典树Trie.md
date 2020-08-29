@@ -279,6 +279,99 @@ class Trie:
 ```
 </details>
 
+# 模板
+### 模板一  字符串`text`中的每个字符开头且存在于字典`dictionary`中的字符的结尾索引
+> text = "mississippi", dictionary = ["is","ppi","hi","sis","i","ssippi"]
+>, 找到以`m`开头的所以在`dictionary`的字符在`text`中的结尾索引，
+>以`i`开头，以`s`开头，...
+
+<details>
+    <summary>模板</summary>
+    
+```python
+class Solution:
+    def multiSearch(self, big: str, dictionary):
+        trie = Trie()
+        #　将所有较短字符插入到字典树中, 即构建字典树
+        for word in dictionary:
+            trie.insert(word)
+        # start存储字符串text[i:j+1]在text中的起始索引
+        start = collections.defaultdict(list)
+        for i in range(len(text)):
+            # trie.search()返回所有存在于dictionary且以i开头的字符串的结尾索引j
+            for j in trie.search(text, i):
+                start[text[i:j+1]].append(i)
+        #　通过start，找到dictionary中每个对应较短字符串的索引起始索引，即start和small两者的关系转换
+        return [start[small] for small in dictionary]
+
+
+# 1. 定义字典树节点
+class TrieNode:
+    def __init__(self):
+        self.children = collections.defaultdict(TrieNode)
+        self.isword = False
+
+
+# 2. 定义字典树
+class Trie:
+    def __init__(self):
+        self.root = TrieNode()
+    
+    # ３. 构建字典树，插入单词
+    def insert(self, word):
+        node = self.root
+        for c in word:
+            # 3.1
+            node = node.children[c]
+        # 一个完整的较短字符串结束标志
+        node.isword = True
+    
+    # ４. 按需要搜索
+    def search(self, text, first):
+        # 通过构建的字典树，在text中找到所有以text[first]开头的较短字符串的结尾字符的索引
+        end = []
+        node = self.root
+        for idx in range(first, len(text)):
+            node = node.children.get(text[idx])
+            #　4.1 中间的字符不在first开头的较短字符串中，后面字符更不会在，故直接返回
+            if not node:
+                return end
+            #　4.2 找到一个完整的较短字符，将其结尾字符在text中的索引加入end中
+            if node.isword:
+                end.append(idx)
+        return end
+```
+
+结合 **BFS** 搜索剩下的以给定子字符串为前缀的所有字符串:
+```python
+def sum(self, prefix: str) -> int:
+        node = self.root
+        for c in prefix:
+            node = node.children.get(c)
+            # 一个前缀没搜索完，即给定的前缀prefix不存在以创建的字典树中
+            if node is None:
+                return 0
+        # 给定的前缀prefix存在于字典树中，则继续运用bfs搜索所有带有该前缀的key，计算总和
+        ans = 0
+        deque = collections.deque([node])
+        while deque:
+            node = deque.popleft()
+            if node.iskey:
+                # 当前是一个完整的key，将起val计入总和
+                ans += node.value
+            # 继续搜索下一层的key，直到没有层了(children)
+            for nxt_node in node.children.values():
+                deque.append(nxt_node)
+        return ans
+```
+</details>
+
+-> **模板相关题目：**
+- [面试题 17.17. 多次搜索](https://leetcode-cn.com/problems/multi-search-lcci/)
+- [1065. 字符串的索引对](https://leetcode-cn.com/problems/index-pairs-of-a-string/)
+- [面试题 17.13. 恢复空格-sweetiee解法二](https://leetcode-cn.com/problems/re-space-lcci/solution/jian-dan-dp-trieshu-bi-xu-miao-dong-by-sweetiee/)
+
+
 ##### 其他字典树题目:
 - [127. 单词接龙](https://leetcode-cn.com/problems/word-ladder/)
 - [126. 单词接龙 II](https://leetcode-cn.com/problems/word-ladder-ii/)
