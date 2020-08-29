@@ -212,6 +212,73 @@ class Trie:
 ```
 </details>
 
+- [720. 词典中最长的单词](https://leetcode-cn.com/problems/longest-word-in-dictionary/)
+> 给出一个字符串数组`words`组成的一本英语词典。从中找出最长的一个单词，该单词是由`words`词典中其他单词逐步添加一个字母组成。
+若其中有多个可行的答案，则返回答案中字典序最小的单词。       
+若无答案，则返回空字符串。
+
+示例 1：
+```
+输入：
+words = ["w","wo","wor","worl", "world"]
+输出："world"
+解释： 
+单词"world"可由"w", "wo", "wor", 和 "worl"添加一个字母组成。
+```
+<details>
+    <summary>解题思路</summary>
+    
+```python
+class Solution:
+    def longestWord(self, words: List[str]) -> str:
+        trie = Trie()
+        # 第一遍,先建立字典树trie
+        for word in words:
+            trie.insert(word)
+        ans = ''
+        # 第二遍, 从最长的单词搜索
+        for word in sorted(words, key=len, reverse=True):
+            if trie.search(word):
+                # 当搜索的单词比已有的单词还短,退出搜索(之后搜索出来的必然不会大于已有的单词长度)
+                if len(word) < len(ans): 
+                    break
+                elif len(word) > len(ans):
+                    ans = word
+                else:
+                    # 取字典序最小者
+                    ans = min(ans, word)
+        return ans
+
+class TrieNode:
+
+    def __init__(self):
+        self.children = collections.defaultdict(TrieNode)
+        self.end = False
+
+
+class Trie:
+
+    def __init__(self):
+        self.root = TrieNode()
+    
+    def insert(self, word):
+        node = self.root
+        for c in word:
+            node = node.children[c]
+        # 在每一个单词结尾标记end
+        node.end = True
+
+    def search(self, word):
+        node = self.root
+        for c in word:
+            node = node.children.get(c)
+            # 在遍历word的过程中,一旦中间某个字符不是结尾字符,即认为不能形成连续的word
+            if node is None or not node.end:
+                return False
+        return True
+```
+</details>
+
 ##### 其他字典树题目:
 - [127. 单词接龙](https://leetcode-cn.com/problems/word-ladder/)
 - [126. 单词接龙 II](https://leetcode-cn.com/problems/word-ladder-ii/)
