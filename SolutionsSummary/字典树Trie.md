@@ -286,7 +286,7 @@ class Trie:
 >以`i`开头，以`s`开头，...
 
 <details>
-    <summary>模板</summary>
+    <summary>通用模板</summary>
     
 ```python
 class Solution:
@@ -341,8 +341,12 @@ class Trie:
                 end.append(idx)
         return end
 ```
+</details>
 
-结合 **BFS** 搜索剩下的以给定子字符串为前缀的所有字符串:
+
+<details>
+    <summary>BFS模板-搜索前缀剩下的所有字符串</summary>
+    
 ```python
 def sum(self, prefix: str) -> int:
         node = self.root
@@ -364,12 +368,49 @@ def sum(self, prefix: str) -> int:
                 deque.append(nxt_node)
         return ans
 ```
-</details>
 
--> **模板相关题目：**
+`相关题目：`
+
 - [面试题 17.17. 多次搜索](https://leetcode-cn.com/problems/multi-search-lcci/)
 - [1065. 字符串的索引对](https://leetcode-cn.com/problems/index-pairs-of-a-string/)
 - [面试题 17.13. 恢复空格-sweetiee解法二](https://leetcode-cn.com/problems/re-space-lcci/solution/jian-dan-dp-trieshu-bi-xu-miao-dong-by-sweetiee/)
+
+</details>
+
+
+<details>
+    <summary>DFS模板-搜索前缀剩下的字符跟word的匹配</summary>
+    
+```python
+def search(self, word: str) -> bool:
+        """
+        Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one letter.
+        """
+        # dfs搜索匹配的单词
+        def helper(node, word):
+            for i, c in enumerate(word):
+                if c.isalpha():
+                    # c为字母且不存在于字典树中，返回false
+                    if c not in node.children: return False
+                    node = node.children[c]
+                else:
+                    # c为'.'， 则dfs搜索node.children的每个节点
+                    for nxt in node.children:
+                        # 有一个节点匹配，即刻返回true
+                        if helper(node.children[nxt], word[i+1:]):
+                            return True
+                    # 让'.'匹配node.children中所有的字母仍然匹配不到，返回false
+                    return False
+            # 按照word中的每个字符匹配后，最后的一个节点是否是字典中单词的结束
+            return node.isword
+        return helper(self.root, word)
+```
+
+`相关题目：`
+- [211. 添加与搜索单词 - 数据结构设计](https://leetcode-cn.com/problems/design-add-and-search-words-data-structure/)
+- [676. 实现一个魔法字典](https://leetcode-cn.com/problems/implement-magic-dictionary/)
+
+</details>
 
 
 ##### 其他字典树题目:
@@ -379,4 +420,6 @@ def sum(self, prefix: str) -> int:
 - [212. 单词搜索 II](https://leetcode-cn.com/problems/word-search-ii/)
 - [面试题 17.22. 单词转换](https://leetcode-cn.com/problems/word-transformer-lcci/)
 - [面试题 17.13. 恢复空格](https://leetcode-cn.com/problems/re-space-lcci/)
+- [676. 实现一个魔法字典](https://leetcode-cn.com/problems/implement-magic-dictionary/)
 - [leetcode-trie集合](https://leetcode-cn.com/tag/trie/)
+
