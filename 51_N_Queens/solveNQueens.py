@@ -1,26 +1,22 @@
-import numpy as np
-
-
 class Solution:
     def solveNQueens(self, n: int) -> List[List[str]]:
+
         ans = []
-        cur = np.full((n, n), '.', dtype=str)
-        def dfs(cur, r):
+        S = '.' * n
+
+        def backtrack(r, pre, col, u_diag, d_diag):
             if r == n:
-                ans.append([''.join(p) for p in cur])
+                ans.append(pre)
                 return
             for c in range(n):
-                if isvalid(cur, r, c):
-                    cur[r][c] = 'Q'
-                    dfs(cur, r + 1)
-                    cur[r][c] = '.'
-        def isvalid(cur, r, c):
-            # 同一列
-            if 'Q' in cur[:, c]: return False
-            # 同一平行于主对角线
-            if 'Q' in np.diag(cur, c - r): return False
-            # 同一平行于辅对角线
-            if 'Q' in np.diag(np.rot90(cur), r + c - n + 1): return False
-            return True
-        dfs(cur, 0)
+                """
+                当前皇后有效的条件，不在这三种线上（按行扫描排列'Q', 故必然不在同一行）：
+                1). 同一列
+                2). 主对角线，坐标之和相等
+                3). 副对角线，坐标之差相等
+                """
+                if c not in col and r + c not in u_diag and r - c not in d_diag:
+                    backtrack(r + 1, pre + [S[:c] + "Q" + S[c+1:]], {c} | col, {r + c} | u_diag, {r - c} | d_diag)
+        
+        backtrack(0, [], set(), set(), set())
         return ans
