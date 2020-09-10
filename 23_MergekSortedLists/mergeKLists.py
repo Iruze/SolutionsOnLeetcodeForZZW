@@ -24,3 +24,24 @@ class Solution:
             pNode = pNode.next
         pNode.next = head1 if head1 else head2
         return dummy.next
+
+    
+# 解法二: 优先级队列
+# class Solution:
+#     def mergeKLists(self, lists: List[ListNode]) -> ListNode:
+#         hp = []
+#         for i in range(len(lists)):
+#             if lists[i]:
+#                 heapq.heappush(hp, (lists[i].val, i))
+        
+#         dummy = ListNode(-1)
+#         node = dummy
+#         while hp:
+#             val, i = heapq.heappop(hp)
+#             node.next = lists[i]
+#             node = node.next
+#             lists[i] = lists[i].next
+#             if lists[i]:
+#                 heapq.heappush(hp, (lists[i].val, i))
+#         node.next = None
+#         return dummy.next
