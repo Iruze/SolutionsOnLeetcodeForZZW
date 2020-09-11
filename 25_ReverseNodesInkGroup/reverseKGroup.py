@@ -36,35 +36,26 @@ class Solution:
 
     
 # 解法二
-# class Solution:
-#     def reverseKGroup(self, head: ListNode, k: int) -> ListNode:
-#         if not head or not head.next:
-#             return head
-#         dummy = ListNode(-1)
-#         dummy.next = head
-#         last = self._reverseK(dummy, k)
-#         # _reverseK()返回已翻转的长度为k的链表的最后一个节点
-#         while last:
-#             last = self._reverseK(last, k)
-#         return dummy.next
+class Solution:
+    def reverseKGroup(self, head: ListNode, k: int) -> ListNode:
+        dummy = ListNode(-1)
+        dummy.next = head
+        nxt = dummy
+        while nxt:
+            nxt = self._reverseK(nxt, k)
+        return dummy.next
     
-    
-#     def _reverseK(self, dummy, k):
-#         """"
-#         将dummy.next开头的长度为k的链表翻转，并且衔接好翻转后的左右的断点
-#         """
-#         l1, l2 = dummy, dummy.next
-#         pre, cur, end = dummy, dummy.next, dummy.next
-#         for _ in range(k):
-#             # 当前片段长度小于k， 提前结束，返回None
-#             if not end:
-#                 return None
-#             end = end.next
-#         while cur != end:
-#             tmp = cur.next
-#             cur.next = pre
-#             pre = cur
-#             cur = tmp
-#         # 衔接好断点, pre, cur为右断点处的两点(r1, r2)
-#         l1.next, l2.next = pre, cur
-#         return l2
+    def _reverseK(self, dummy, k):
+        pre, cur, end = dummy, dummy.next, dummy.next
+        for _ in range(k):
+            if not end:
+                return None
+            end = end.next
+        l1, l2 = pre, cur
+        while cur != end:
+            tmp = cur.next
+            cur.next = pre
+            pre = cur
+            cur = tmp
+        l1.next, l2.next = pre, cur
+        return l2
