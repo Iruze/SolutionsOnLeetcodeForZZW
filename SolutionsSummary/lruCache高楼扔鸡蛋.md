@@ -204,6 +204,12 @@ class Solution:
      coins =  3*1*5      +  3*5*8    +  1*3*8      + 1*8*1   = 167
 ```
 
+说明:
+````shell script
+你可以假设 nums[-1] = nums[n] = 1，但注意它们不是真实存在的所以并不能被戳破。
+0 ≤ n ≤ 500, 0 ≤ nums[i] ≤ 100
+````
+
 <details>
     <summary>解题思路</summary>
     
