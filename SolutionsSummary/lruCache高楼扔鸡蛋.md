@@ -230,8 +230,41 @@ class Solution:
 ```
 </details>
 
+- [174. 地下城游戏](https://leetcode-cn.com/problems/dungeon-game/)
 
-
+<details>
+    <summary>解题思路</summary>
+    
+```python
+class Solution:
+    def calculateMinimumHP(self, dungeon: List[List[int]]) -> int:
+        rows, cols = len(dungeon), len(dungeon[0])
+        # dp = [[0] * cols for _ in range(rows)]
+        # dp[-1][-1] = max(1, 1 - dungeon[-1][-1])
+        # for r in range(rows - 1, -1, -1):
+        #     for c in range(cols - 1, -1, -1):
+        #         if r == rows - 1 and c == cols - 1: 
+        #             continue
+        #         elif r == rows - 1:
+        #             dp[r][c] = max(1, dp[r][c + 1] - dungeon[r][c])
+        #         elif c == cols - 1:
+        #             dp[r][c] = max(1, dp[r + 1][c] - dungeon[r][c])
+        #         else:
+        #             dp[r][c] = max(1, min(dp[r + 1][c], dp[r][c + 1]) - dungeon[r][c])
+        # return dp[0][0]
+        
+        @functools.lru_cache(None)
+        def dp(i, j):
+            if i == rows - 1 and j == cols - 1:
+                return max(1, 1 - dungeon[i][j])
+            if i == rows - 1:
+                return max(1, dp(i, j + 1) - dungeon[i][j])
+            if j == cols - 1:
+                return max(1, dp(i + 1, j) - dungeon[i][j])
+            return max(1, min(dp(i + 1, j), dp(i, j + 1)) - dungeon[i][j])
+        return dp(0, 0)
+``` 
+</details>
 
 
 
