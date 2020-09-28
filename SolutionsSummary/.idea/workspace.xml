@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2b72fea-1eb7-4713-84b6-99745c17f4be" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/系列问题/跳跃问题.md" beforeDir="false" afterPath="$PROJECT_DIR$/系列问题/跳跃问题.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../summary.md" beforeDir="false" afterPath="$PROJECT_DIR$/../summary.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +21,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../summaryForSolutionMethods.md" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -49,9 +49,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1826" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1599485825386">
-      <screen x="1050" y="0" width="1920" height="1080" />
+    <state x="424" y="501" width="379" height="741" key="FileChooserDialogImpl" timestamp="1601296080407">
+      <screen x="0" y="27" width="1050" height="1653" />
     </state>
+    <state x="424" y="501" width="379" height="741" key="FileChooserDialogImpl/1050.0.1920.1080/0.27.1050.1653@0.27.1050.1653" timestamp="1601296080407" />
     <state x="1826" y="310" width="424" height="484" key="FileChooserDialogImpl/1050.0.1920.1080/0.27.1050.1653@1050.0.1920.1080" timestamp="1599485825386" />
   </component>
 </project>

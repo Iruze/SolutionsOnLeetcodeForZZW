@@ -281,6 +281,16 @@
 ### 括号
 - [20. 有效的括号](https://leetcode-cn.com/problems/valid-parentheses/)
 - [1111. 有效括号的嵌套深度](https://leetcode-cn.com/problems/maximum-nesting-depth-of-two-valid-parentheses-strings/)
+- [面试题 08.09-括号](https://leetcode-cn.com/problems/bracket-lcci)
+- [22.括号生成](https://leetcode-cn.com/problems/generate-parentheses)
+- [856. 括号的分数](https://leetcode-cn.com/problems/score-of-parentheses)
+- [678. 有效的括号字符串](https://leetcode-cn.com/problems/valid-parenthesis-string)
+- [32. 最长的有效括号](https://leetcode-cn.com/problems/longest-valid-parentheses)
+- [1249. 移除无效的括号](https://leetcode-cn.com/problems/minimum-remove-to-make-valid-parentheses)
+- [1021. 删除最外层的括号](https://leetcode-cn.com/problems/remove-outermost-parentheses)
+- [921. 使括号有效的最少添加](https://leetcode-cn.com/problems/minimum-add-to-make-parentheses-valid)
+- [1190. 反转每队括号间的子串](https://leetcode-cn.com/problems/reverse-substrings-between-each-pair-of-parentheses)
+
 
 ### 单调栈
 - [402.移掉K位数字](https://leetcode-cn.com/problems/remove-k-digits/)  
