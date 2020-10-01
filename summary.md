@@ -412,13 +412,15 @@
 - [223. Rectangle Area](https://leetcode-cn.com/problems/rectangle-area/)
 - [836. 矩形重叠](https://leetcode-cn.com/problems/rectangle-overlap/submissions/)
 
-### 高效的幂运算
+### 幂运算/平方根
 - [372. 超级次方](https://leetcode-cn.com/problems/super-pow/)
+- [50. Pow(x, n)](https://leetcode-cn.com/problems/powx-n/)
+- [172. 阶乘后的零](https://leetcode-cn.com/problems/factorial-trailing-zeroes/)
+- [69. x 的平方根](https://leetcode-cn.com/problems/sqrtx/)
 
 ### 数学其他
 - [7. 整数反转](https://leetcode-cn.com/problems/reverse-integer/submissions/)
-- [50. Pow(x, n)](https://leetcode-cn.com/problems/powx-n/)
-- [172. 阶乘后的零](https://leetcode-cn.com/problems/factorial-trailing-zeroes/)
+
 
 # 字符串（不含dp）
 - [6. Z 字形变换](https://leetcode-cn.com/problems/zigzag-conversion/submissions/)
