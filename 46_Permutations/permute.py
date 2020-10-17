@@ -39,7 +39,7 @@ class Solution:
         return output
 
     
-# 解法三: 递归-回溯
+# 解法三: 递归-回溯, visited为常量,每一个为表示对应的当前nums位是否被访问,节省了O(n)空间
 class Solution:
     def permute(self, nums: List[int]) -> List[List[int]]:
         def backtrack(depth=0, cur=[], visited=0):
