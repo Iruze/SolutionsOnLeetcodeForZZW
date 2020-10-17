@@ -20,7 +20,7 @@ class Solution:
         return output
 
 
-# 解法二：递归-回溯：visited记录访问足迹
+# 解法二：递归-回溯：visited记录访问足迹   (经典写法)
 class Solution:
     def permute(self, nums: List[int]) -> List[List[int]]:
         def _dfs(depth=0, cur=[]):
@@ -37,3 +37,18 @@ class Solution:
         visited = [False for _ in range(len(nums))]
         _dfs()
         return output
+
+    
+# 解法三: 递归-回溯
+class Solution:
+    def permute(self, nums: List[int]) -> List[List[int]]:
+        def backtrack(depth=0, cur=[], visited=0):
+            if depth == len(nums):
+                ans.append(cur[:])
+                return
+            for i, num in enumerate(nums):
+                if visited & (1<<i) == 0:
+                    backtrack(depth + 1, cur + [nums[i]], visited | (1 << i))
+        ans = []
+        backtrack()
+        return ans
