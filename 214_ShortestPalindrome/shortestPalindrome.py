@@ -6,8 +6,10 @@
 class Solution:
     def shortestPalindrome(self, s: str) -> str:
         hi = len(s)
+        # 找到原来s中hi左边最长的回文串,
         while hi > 0:
             if s[:hi] == s[:hi][::-1]:
                 break
             hi -= 1
+        # hi左边是回文的,hi右边则需要镜像到s的前面去即可
         return s[hi:][::-1] + s
