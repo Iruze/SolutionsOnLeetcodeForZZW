@@ -27,3 +27,36 @@ class Solution:
     def canMeasureWater(self, x: int, y: int, z: int) -> bool:
         return z == 0 or x + y >= z and z % math.gcd(x, y) == 0
 ```
+
+### 堆排序代码
+- 参考《算法》， 构建**最大堆**，对数组`nums`进行**升序**排列
+```python
+# 上浮
+def swim(nums, k, N):
+	while k > 1 and less(k // 2, k):
+		exch(k // 2, k)
+		k //= 2
+
+
+# 下沉
+def sink(nums, k, N):
+	while 2 * k <= N:
+		j = 2 * k
+		if j < N and less(j, j + 1): j += 1
+		if less(j, k): break
+		exch(k, j)
+		k = j
+
+
+# 堆排序
+def heapSort(nums):
+	N = len(nums)
+	# 构建堆
+	for k in range(k // 2, 0, -1):
+		sink(nums, k, N)
+	# 堆排序
+	while N > 1:
+		exch(1, N)
+		N -= 1
+		sink(nums, 1, N)
+```
