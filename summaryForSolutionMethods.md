@@ -6,7 +6,10 @@ def gcd(p, q):
         return p
     return gcd(q, p % q)
 ```
-例：[365. 水壶问题](https://leetcode-cn.com/problems/water-and-jug-problem/)
+- [365. 水壶问题](https://leetcode-cn.com/problems/water-and-jug-problem/)
+<details>
+    <summary>解法</summary>
+    
 > 有两个容量分别为 x升 和 y升 的水壶以及无限多的水。请判断能否通过使用这两个水壶，从而可以得到恰好 z升 的水？
 如果可以，最后请用以上水壶中的一或两个来盛放取得的 z升 水。
 你允许：    
@@ -27,6 +30,8 @@ class Solution:
     def canMeasureWater(self, x: int, y: int, z: int) -> bool:
         return z == 0 or x + y >= z and z % math.gcd(x, y) == 0
 ```
+</details>
+
 
 ### 堆排序代码
 - 参考《算法》， 构建**最大堆**，对数组`nums`进行**升序**排列
