@@ -55,7 +55,7 @@ class Solution:
 返回 true 。
 ```
 <details>
-    <summary>解法</summary>
+    <summary>O(n*n)的解法</summary>
     
 ```python3
 class Solution:
@@ -66,6 +66,29 @@ class Solution:
         if not root: return True
         # 判断条件：left平衡 && right平衡 && abs(left - right) < 2
         return self.isBalanced(root.left) and self.isBalanced(root.right) and abs(depth(root.left) - depth(root.right)) < 2
+```
+
+</details>
+
+<details>
+    <summary>O(n)的解法</summary>
+    
+```python
+class Solution:
+    def isBalanced(self, root: TreeNode) -> bool:
+        self.ans = True
+        # 自底向上，每个节点遍历一遍，故而复杂度为 O(n)
+        def depth(root):
+            if not root: return 0
+            left = depth(root.left)
+            right = depth(root.right)
+            if abs(left - right) > 1:
+                self.ans = False
+                return 0
+            # 返回当前节点root的(最大)高度
+            return 1 + max(left, right)
+        depth(root)
+        return self.ans
 ```
 
 </details>
