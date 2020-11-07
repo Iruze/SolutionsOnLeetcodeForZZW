@@ -1,6 +1,6 @@
-二叉树大部分使用递归解法
+二叉树大部分使用**递归**解法
 
-### 二叉树的高度
+## 二叉树的高度
 
 - [104. 二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)
 
@@ -34,7 +34,7 @@ class Solution:
 
 </details>
 
-### 判断是否为平衡二叉树
+## 判断是否为平衡二叉树
 
 - [110. 平衡二叉树](https://leetcode-cn.com/problems/balanced-binary-tree/)
 
@@ -70,7 +70,7 @@ class Solution:
 
 </details>
 
-### 二叉树的直径
+## 二叉树的直径
 
 - [543. 二叉树的直径](https://leetcode-cn.com/problems/diameter-of-binary-tree/)
 
@@ -113,7 +113,8 @@ class Solution:
 ```
 
 </details>
-### 二叉树的坡度
+
+## 二叉树的坡度
 
 - [563. 二叉树的坡度](https://leetcode-cn.com/problems/binary-tree-tilt/)
 
@@ -159,7 +160,8 @@ class Solution:
 ```
 </details>
 
-### 二叉树中不相邻节点的最大总和
+## 二叉树中不相邻节点的最大总和
+
 **实质就是：　打家劫舍III，跟上面的内置函数tilt()一样，在求root当前节点的同时还做了其他的事情**
   - [337. 打家劫舍 III](https://leetcode-cn.com/problems/house-robber-iii/)
   > 在上次打劫完一条街道之后和一圈房屋后，小偷又发现了一个新的可行窃的地区。这个地区只有一个入口，我们称之为“根”。 除了“根”之外，每栋房子有且只有一个“父“房子与之相连。一番侦察之后，聪明的小偷意识到“这个地方的所有房屋的排列类似于一棵二叉树”。 如果两个直接相连的房子在同一天晚上被打劫，房屋将自动报警。       
@@ -202,7 +204,7 @@ class Solution:
 
 </details>
 
-### 二叉树的序列化
+## 二叉树的序列化
 - [652. 寻找重复的子树](https://leetcode-cn.com/problems/find-duplicate-subtrees/)
 > 给定一棵二叉树，返回所有重复的子树。对于同一类的重复子树，你只需要返回其中任意一棵的根结点即可。          
 两棵树重复是指它们具有相同的结构以及相同的结点值。
