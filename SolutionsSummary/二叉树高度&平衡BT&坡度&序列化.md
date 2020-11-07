@@ -22,14 +22,17 @@
 返回它的最大深度 3 
 ```
 
-直接看code
-
+<details>
+    <summary>解法</summary>
+    
 ```python3
 class Solution:
     def maxDepth(self, root: TreeNode) -> int:
         if not root: return 0     # base case 是 root = None
         return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right))
 ```
+
+</details>
 
 ### 判断是否为平衡二叉树
 
@@ -51,9 +54,9 @@ class Solution:
    15   7
 返回 true 。
 ```
-
-code
-
+<details>
+    <summary>解法</summary>
+    
 ```python3
 class Solution:
     def isBalanced(self, root: TreeNode) -> bool:
@@ -64,6 +67,8 @@ class Solution:
         # 判断条件：left平衡 && right平衡 && abs(left - right) < 2
         return self.isBalanced(root.left) and self.isBalanced(root.right) and abs(depth(root.left) - depth(root.right)) < 2
 ```
+
+</details>
 
 ### 二叉树的直径
 
@@ -86,6 +91,9 @@ class Solution:
 
 **注意**：两结点之间的路径长度是以它们之间边的数目表示。
 
+<details>
+    <summary>解法</summary>
+    
 ```python3
 class Solution:
     def diameterOfBinaryTree(self, root: TreeNode) -> int:
@@ -104,6 +112,7 @@ class Solution:
         return self.diameter
 ```
 
+</details>
 ### 二叉树的坡度
 
 - [563. 二叉树的坡度](https://leetcode-cn.com/problems/binary-tree-tilt/)
@@ -129,6 +138,9 @@ class Solution:
 
 本题跟上一题 **二叉树的直径** 思路一样，本题中 `titl`函数返回本节点的总和，实际捎带计算了当前节点的坡度
 
+<details>
+    <summary>解法</summary>
+    
 ```python3
 class Solution:
     def findTilt(self, root: TreeNode) -> int:
@@ -145,6 +157,7 @@ class Solution:
         tilt(root)
         return self.tilt
 ```
+</details>
 
 ### 二叉树中不相邻节点的最大总和
 **实质就是：　打家劫舍III，跟上面的内置函数tilt()一样，在求root当前节点的同时还做了其他的事情**
@@ -165,6 +178,10 @@ class Solution:
 输出: 7 
 解释: 小偷一晚能够盗取的最高金额 = 3 + 3 + 1 = 7.
 ```
+
+<details>
+    <summary>解法</summary>
+    
 ```python3
 class Solution:
     def rob(self, root: TreeNode) -> int:
@@ -183,12 +200,16 @@ class Solution:
         return max(helper(root))
 ```
 
+</details>
 
 ### 二叉树的序列化
 - [652. 寻找重复的子树](https://leetcode-cn.com/problems/find-duplicate-subtrees/)
 > 给定一棵二叉树，返回所有重复的子树。对于同一类的重复子树，你只需要返回其中任意一棵的根结点即可。          
 两棵树重复是指它们具有相同的结构以及相同的结点值。
 
+<details>
+    <summary>解法</summary>
+    
 ```python3
 class Solution(object):
     def findDuplicateSubtrees(self, root):
@@ -225,3 +246,5 @@ def collect(node):
 才是顺带求取
 """
 ```
+
+</details>
