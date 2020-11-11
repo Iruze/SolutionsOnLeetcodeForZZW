@@ -258,3 +258,105 @@ def smallestK(self, arr: List[int], k: int) -> List[int]:
 >
 > 先建堆，长度为`k`的堆，`O(k)`，后面的数字进入堆，每次堆调整为`O(logk)`，
 >所以总的时间复杂度为: `O(k) + O(n*logk)`
+
+### 其他类似题目：
+- [703. 数据流中的第 K 大元素](https://leetcode-cn.com/problems/kth-largest-element-in-a-stream/)
+> 设计一个找到数据流中第 k 大元素的类（class）。注意是排序后的第 k 大元素，不是第 k 个不同的元素。
+<details>
+	<summary>解法</summary>
+	
+本题是流动的**数据流**，所以只能用**堆排算法**.
+```python
+class KthLargest:
+
+    def __init__(self, k: int, nums: List[int]):
+        self.k = k
+        # 加入-Inf, 防止初始时heappushpop([], -2)，此时nums=[], nums[0]报错
+        self.nums = heapq.nlargest(k, nums + [float('-Inf')])
+        heapq.heapify(self.nums)
+
+
+    def add(self, val: int) -> int:
+        heapq.heappushpop(self.nums, val)
+        return self.nums[0]
+```
+</details>
+
+- [295. 数据流的中位数](https://leetcode-cn.com/problems/find-median-from-data-stream/)
+> 中位数是有序列表中间的数。如果列表长度是偶数，中位数则是中间两个数的平均值。
+
+例如，
+```
+[2,3,4] 的中位数是 3
+
+[2,3] 的中位数是 (2 + 3) / 2 = 2.5
+
+设计一个支持以下两种操作的数据结构：
+void addNum(int num) - 从数据流中添加一个整数到数据结构中。
+double findMedian() - 返回目前所有元素的中位数。
+```
+<details>
+	<summary>解法</summary>
+	
+```python
+# 方法一： 直接二分插入，维持原来的数组有序
+# 复杂度为 O(nlogn)
+
+class MedianFinder:
+
+    def __init__(self):
+        """
+        initialize your data structure here.
+        """
+        self.arr = []
+        
+
+    def addNum(self, num: int) -> None:
+        # 二分插入，使得原数组维持有序
+        bisect.insort_left(self.arr, num)
+        
+
+    def findMedian(self) -> float:
+        n = len(self.arr)
+        # 无论原数组长度为奇或偶，求中位数都是这个表达式
+        return (self.arr[n // 2] + self.arr[(n - 1) // 2]) / 2.0
+        
+
+# 方法二：原数组前半段用大顶堆来维护，后半段用小顶堆来维护
+# 复杂度为 O(logn)
+# 比如 [1, 2, 3][4, 8] 或者 [1, 2, 3][4, 8, 10] 前半段递增只关心最大的值3， 后半段只关心4
+# 所以[1, 2, 3]用大顶堆来维护， [4, 8, 10]用小顶堆来维护
+
+
+class MedianFinder:
+
+    def __init__(self):
+        """
+        initialize your data structure here.
+        """
+        self.size = 0
+        self.maxheap = []
+        self.minheap = []
+        
+
+    def addNum(self, num: int) -> None:
+        self.size += 1
+        # 因为 (前半段长度 >= 后半段长度)， 所以add的元素优先补冲到后半段
+        # 新add的元素，从前半段“游走”一遍后加入后半段，维护了数组递增
+        _, max_top = heapq.heappushpop(self.maxheap, (-num, num))
+        heapq.heappush(self.minheap, max_top)
+        # 再来看整体长度，如果是奇数长度，则上面的操作使得 (前半段长度 < 后半段长度)
+        # 需要从后半段匀出来一个，放到前半段
+        if self.size & 1 == 1:
+            min_top = heapq.heappop(self.minheap)
+            heapq.heappush(self.maxheap, (-min_top, min_top))
+        
+
+    def findMedian(self) -> float:
+        # 前半段大顶堆存的 tumple
+        if self.size & 1 == 1:
+            return self.maxheap[0][1]
+        else:
+            return (self.maxheap[0][1] + self.minheap[0]) / 2.0
+```
+</details>
