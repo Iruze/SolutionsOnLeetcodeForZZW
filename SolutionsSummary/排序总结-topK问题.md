@@ -179,7 +179,7 @@ def quickSort(self, nums, start, end):
 # topK问题
 |       解法          |      平均时间复杂度      |                缺点                  |    
 |       :----        |        :----          |                  :----               |
-|       partition    |         `O(n)`        |       改变元素顺序，海量数据时占用内存     |
+|       partition算法 |         `O(n)`        |       改变元素顺序，海量数据时占用内存     |
 |       堆排          |      `O(nlogk)`           |       不改变元素顺序，适合处理海量数据     |
 
 
