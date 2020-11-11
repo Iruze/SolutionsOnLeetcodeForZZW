@@ -128,7 +128,7 @@ class Solution:
     </details>
 
 # 快排
-## partition
+## partition模块
 **partition**的时间复杂度为`O(n)`， 即调用一次**partition**遍历`end-start`长的`nums`.
 ```python
 def partition(nums, start, end):
@@ -151,7 +151,7 @@ def partition(nums, start, end):
 ## 快排
 快排基于上面的`partition`模块        
 - `partition`找到基准分界的下标`idx`
-- **分治**思想： 将`nums`分为`idx`左右两部分，分别再次调用`partition`
+- **分治思想**： 将`nums`分为`idx`左右两部分，分别再次调用`partition`
 <details>
     <summary>展开</summary>
     
