@@ -37,31 +37,26 @@ def bubbleSort(nums):
     
 堆排序-上浮    
 ```python
-# 小顶堆， logn次比较, logn次交换
-def swim(nums, i):
-    j = (i - 1) // 2
-    while j >= 0 and nums[i] < nums[j]:
-        nums[i], nums[j] = nums[j], nums[i]
-        i = j
-        j = (i - 1) // 2      
+# 大顶堆， logn次比较, logn次交换
+def swim(nums, k):
+	while k > 0 and nums[k] > nums[(k - 1) // 2]:
+		nums[k], nums[(k - 1) // 2] = nums[(k - 1) // 2], nums[k]
+		k = (k - 1) // 2     
 ```
 
 堆排序-下沉
     
 ```python
-# 小顶堆， 2logn次比较, logn次交换
-def sink(nums, i, n)
-    tmp = nums[i]
-    j = 2 * i + 1
-    while j < n:
-        if j + 1 < n and nums[j + 1] > nums[j]:
-            j += 1
-        if nums[i] < nums[j]:
-            break
-        nums[i] = nums[j]
-        i = j
-        j = 2 * i + 1
-    nums[i] = tmp        
+# 大顶堆， 2logn次比较, logn次交换
+def sink(nums, k):
+	while k < len(nums):
+		j = 2 * k + 1
+		if j + 1 < len(nums) and nums[j] < nums[j + 1]:
+			j += 1
+		if nums[j] < nums[k]:
+			break
+		nums[j], nums[k] = nums[k], nums[j]
+		k = j     
 ```
 
 ## 堆排序
