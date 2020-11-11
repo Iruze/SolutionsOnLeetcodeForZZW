@@ -49,7 +49,7 @@ def swim(nums, k):
 ```python
 # 大顶堆， 2logn次比较, logn次交换
 def sink(nums, k):
-	while k < len(nums):
+	while 2 * k + 1 < len(nums):
 		j = 2 * k + 1
 		if j + 1 < len(nums) and nums[j] < nums[j + 1]:
 			j += 1
@@ -97,17 +97,14 @@ class Solution:
 
     # 构建大顶堆，单次下沉- O(2logn) 次比较, O(logn) 次交换
     def _sink(self, nums, i, n):
-        j = 2 * i + 1
-        tmp = nums[i]
-        while j < n:
+        while 2 * i + 1 < n:
+	    j = 2 * i + 1
             if j + 1 < n and nums[j] < nums[j + 1]:
                 j += 1
             if nums[i] > nums[j]:
                 break
-            nums[i] = nums[j]
-            i = j
-            j = 2 * i + 1
-        nums[i] = tmp      
+            nums[i], nums[j] = nums[j], nums[i]
+            i = j    
 ```
 
 </details>
