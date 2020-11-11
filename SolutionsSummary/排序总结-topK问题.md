@@ -184,3 +184,71 @@ def quickSort(self, nums, start, end):
 
 
 
+- [面试题 17.14. 最小K个数](https://leetcode-cn.com/problems/smallest-k-lcci/)
+> 设计一个算法，找出数组中最小的`k`个数。以任意顺序返回这`k`个数均可。
+
+示例：
+```shell
+输入： arr = [1,3,5,7,2,4,6,8], k = 4
+输出： [1,2,3,4]
+```
+### I. partitiona解法
+<details>
+	<summary>code</summary>
+	
+```python
+class Solution:
+    def smallestK(self, arr: List[int], k: int) -> List[int]:
+        def partition(arr, start, end):
+            idx = random.randint(start, end)
+            arr[idx], arr[end] = arr[end], arr[idx]
+            small = start - 1
+            for i in range(start, end):
+                if arr[i] < arr[end]:
+                    small += 1
+                    if small != i:
+                        arr[small], arr[i] = arr[i], arr[small]
+            small += 1
+            arr[small], arr[end] = arr[end], arr[small]
+            return small
+        if not arr or k < 1: return []
+        start, end = 0, len(arr) - 1
+        idx = partition(arr, start, end)
+        while idx != k - 1:
+            if idx < k - 1:
+	    	# 错误写法: idx = partition(arr, idx + 1, end)
+		# start, end在每一次的搜索中都在缩写范围，故这两个边界应该是实际赋值
+                start = idx + 1
+                idx = partition(arr, start, end)
+            else:
+                end = idx - 1
+                idx = partition(arr, start, end)
+        return arr[:k]
+```
+</details>
+
+> 时间复杂度分析:		
+> `partition`单次调用的时间复杂度为`O(n)`，当`idx`多次随机调用时候，可认为将长度为`n`的数组每次折半搜索`k`，即:		
+> `1 + 1/2 + 1/4 + 1/8 + ... = 2 - 1/2^n < 2`，即时间不超过`O(2n)`，故**总的随机调用**时间复杂度为`O(n)`.
+
+### II. 堆排解法
+
+<details>
+	<summary>code</summary>
+	
+```python
+def smallestK(self, arr: List[int], k: int) -> List[int]:
+        ans = []
+        for a in arr:
+            if len(ans) < k:
+	    	# python只有最小堆，故元素取反，等效于建立a实际值的最大堆
+                heapq.heappush(ans, -a)
+            else:
+                heapq.heappushpop(ans, -a)
+        return [-x for x in ans]
+```
+
+</details>
+
+> 时间复杂度分析:		
+> 先建堆，长度为`k`的堆，`O(k)`，后面的数字进入堆，每次堆调整为`O(logk)`，所以总的时间复杂度为: `O(k) + O(n*logk)`
