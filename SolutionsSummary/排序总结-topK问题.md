@@ -34,10 +34,8 @@ def bubbleSort(nums):
 </details>
 
 3). 再来看**堆排序**里面的**上浮**和**下沉**
-
-<details>
-    <summary>堆排序-上浮</summary>
     
+堆排序-上浮    
 ```python
 # 小顶堆， logn次比较, logn次交换
 def swim(nums, i):
@@ -48,11 +46,7 @@ def swim(nums, i):
         j = (i - 1) // 2      
 ```
 
-</details>
-
-
-<details>
-    <summary>堆排序-下沉</summary>
+堆排序-下沉
     
 ```python
 # 小顶堆， 2logn次比较, logn次交换
@@ -69,12 +63,20 @@ def sink(nums, i, n)
         j = 2 * i + 1
     nums[i] = tmp        
 ```
-</details>
 
 ## 堆排序
 
+**步骤：**
+- 堆化，正序构建小顶堆，逆序构建大顶堆
+- 堆顶节点和尾节点互换，从堆顶节点开始`sink`下沉
+- 重复上一个步骤
+
+**ps:**
+- 如果堆数组是基`0`，则父节点-`(i - 1) // 2`， 子节点-`2 * i`, `2 * i + 1`
+- 基`1`: 父节点-`i // 2`, 子节点-`2 * i`, `2 * i + 1`
+
 <details>
-    <summary>堆排序</summary>
+    <summary>code</summary>
     
 ```python
 class Solution:
