@@ -126,3 +126,61 @@ class Solution:
     3) [白话经典算法系列之七 堆与堆排序](https://blog.csdn.net/MoreWindows/article/details/6709644)
 
     </details>
+
+# 快排
+## partition
+**partition**的时间复杂度为`O(n)`， 即调用一次**partition**遍历`end-start`长的`nums`.
+```python
+def partition(nums, start, end):
+    # 在[start, end]区间内找到随机的起始下标
+    idx = random.randint(start, end)
+    # 基准值置换放到最后
+    nums[idx], nums[end] = nums[end], nums[end]
+    small = start - 1
+    for i in range(start, end):
+        if nums[i] < nums[end]:
+            small += 1
+            if small != i:
+                nums[small], nums[i] = nums[i], nums[small]
+    small += 1
+    # 恢复基准值的位置
+    nums[small], nums[end] = nums[end], nums[small]
+    return small
+```
+
+## 快排
+快排基于上面的`partition`模块        
+- `partition`找到基准分界的下标`idx`
+- **分治**思想： 将`nums`分为`idx`左右两部分，分别再次调用`partition`
+<details>
+    <summary>展开</summary>
+    
+```python
+def quickSort(self, nums, start, end):
+    if start == end:
+        return
+    idx = self._partition(nums, start, end)
+    if idx > start:
+        self._partition(nums, start, idx - 1)
+    if idx < end:
+        self._partition(nums, idx + 1, end)
+```
+</details>
+
+时间复杂度
+> 最好时间复杂度： `O(nlogn)`, 平均时间复杂度: `O(nlogn)`
+>
+> 最坏时间复杂度： `O(n*n)`, 退化成**冒泡排序**，发生条件： 
+>1. 已排序； 
+>2. 所有元素相等；
+>3. `idx=random.randint(start, end)`，每次`idx=end`，使得另一边的部分始终为空`[]`.
+
+
+# topK问题
+|       解法          |      平均时间复杂度      |                缺点                  |    
+|       :----        |        :----          |                  :----               |
+|       partition    |         `O(n)`        |       改变元素顺序，海量数据时占用内存     |
+|       堆排          |      `O(nlogk)`           |       不改变元素顺序，适合处理海量数据     |
+
+
+
