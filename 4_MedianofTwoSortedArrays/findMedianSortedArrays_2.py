@@ -17,8 +17,10 @@ class Solution:
             else:
                 hi = i
         i, j = lo, k - lo
+        # nums1, nums2可能到数组头
         c1 = max(nums1[i - 1] if i > 0 else float('-Inf'), nums2[j - 1] if j > 0 else float('-Inf'))
         if (n1 + n2) & 1:
             return c1
+        # nums1, nums2可能到数组尾
         c2 = min(nums1[i] if i < n1 else float('Inf'), nums2[j] if j < n2 else float('Inf'))
         return (c1 + c2) / 2.0
