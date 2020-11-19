@@ -92,6 +92,7 @@
 ###### 前缀和+归并
 - [327. 区间和的个数](https://leetcode-cn.com/problems/count-of-range-sum/)
 - [315. 计算右侧小于当前元素的个数](https://leetcode-cn.com/problems/count-of-smaller-numbers-after-self/)
+- [剑指 Offer 51. 数组中的逆序对](https://leetcode-cn.com/problems/shu-zu-zhong-de-ni-xu-dui-lcof/)
 
 ### 数组中的动态规划/贪心
 - [718.最长重复子数组](https://leetcode-cn.com/problems/maximum-length-of-repeated-subarray/)
