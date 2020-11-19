@@ -365,7 +365,7 @@ class MedianFinder:
 # 归并排序
 
 <details>
-    <summary>迭代版本</summary>
+    <summary>迭代版本-Java</summary>
     
 ```java
 import java.lang.Math;
@@ -408,6 +408,34 @@ public class MergeSort {
 
 </details>
 
+
+<details>
+    <summary>迭代版本-python</summary>
+    
+```python
+class Solution:
+
+    def merge_sort(self, nums):
+        if len(nums) <= 1: return nums
+        mid = len(nums) // 2
+        left = self.merge_sort(nums[:mid])
+        right = self.merge_sort(nums[mid:])
+        return self.merge(left, right)
+    
+
+    def merge(self, left, right):
+        i, j = 0, 0
+        tmp = []
+        while i < len(left) or j < len(right):
+            if j == len(right) or i < len(left) and left[i] <= right[j]:
+                tmp.append(left[i])
+                i += 1
+            else:
+                tmp.append(right[j])
+                j += 1
+        return tmp
+```
+</details>
 
 <details>
     <summary>递归版本</summary>
@@ -466,8 +494,13 @@ public class MergeSort {
 
 </details>
 
-##### 参考：
+### 相关题目:
+- [327. 区间和的个数](https://leetcode-cn.com/problems/count-of-range-sum/)
+- [315. 计算右侧小于当前元素的个数](https://leetcode-cn.com/problems/count-of-smaller-numbers-after-self/)
+- [剑指 Offer 51. 数组中的逆序对](https://leetcode-cn.com/problems/shu-zu-zhong-de-ni-xu-dui-lcof/)
+- [148. 排序链表](https://leetcode-cn.com/problems/sort-list/)
+
+### 参考：
 - [排序——归并排序（递归实现+迭代实现 ）](https://www.cnblogs.com/xieyupeng/p/7045988.html)
 - [图解排序算法(四)之归并排序](https://www.cnblogs.com/chengxiao/p/6194356.html)
 
-- []()

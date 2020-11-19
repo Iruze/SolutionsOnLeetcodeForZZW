@@ -175,3 +175,76 @@ class Solution:
         pNode.next = l1 if l1 else l2
         return dummy.next
 ```
+
+### 归并排序
+
+<details>
+    <summary>while-or解法</summary>
+    
+```python
+class Solution:
+
+    def merge_sort(self, nums):
+        if len(nums) <= 1: return nums
+        mid = len(nums) // 2
+        left = self.merge_sort(nums[:mid])
+        right = self.merge_sort(nums[mid:])
+        return self.merge(left, right)
+    
+
+    def merge(self, left, right):
+        i, j = 0, 0
+        tmp = []
+        while i < len(left) or j < len(right):
+            if j == len(right) or i < len(left) and left[i] <= right[j]:
+                tmp.append(left[i])
+                i += 1
+            else:
+                tmp.append(right[j])
+                j += 1
+        return tmp
+```
+</details>
+
+<details>
+    <summary>while-and解法</summary>
+    
+```java
+import java.lang.Math;
+
+
+public class MergeSort {
+    public void sort(int[] arr) {
+
+        if(arr == null) return;
+
+        int[] temp = new int[arr.length];
+        int left_min, left_max, right_min, right_max;
+
+        //步长 
+        for(int i = 1; i < arr.length; i = i * 2) {
+            for(left_min = 0; left_min < arr.length - i; left_min = right_max) {
+
+                left_max = right_min = left_min + i;
+                right_max = Math.min(arr.length, right_min + i);
+
+                int t = 0;
+                while(left_min < left_max && right_min < right_max) {
+                    temp[t++] = arr[left_min] < arr[right_min]? arr[left_min++]: arr[right_min++];
+                }
+
+                //如果Lmin 没有走到LMAX的位置 说明L还有元素 
+                while(left_min < left_max) {
+                    arr[--right_min] = arr[--left_max];
+                }
+
+                while(t > 0) {
+                    //把整个数组还原到 刚刚剩下那个最大元素的后面 
+                    arr[--right_min] = temp[--t];
+                }
+            }
+        }
+    }
+}
+```
+</details>
