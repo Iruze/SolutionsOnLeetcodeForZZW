@@ -410,7 +410,7 @@ public class MergeSort {
 
 
 <details>
-    <summary>迭代版本-python</summary>
+    <summary>递归版本-python</summary>
     
 ```python
 class Solution:
@@ -438,7 +438,7 @@ class Solution:
 </details>
 
 <details>
-    <summary>递归版本</summary>
+    <summary>递归版本-Java</summary>
     
 ```java
 package sortdemo;
