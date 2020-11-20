@@ -42,3 +42,4 @@ mid = len(nums) // 2   # 偏右， [1, 2, 3, 4]， mid=3
 mid = left + (right - left) // 2
 # 或
 mid = left + ((right - left) >> 1)   # 偏左， [1, 2, 3, 4]， mid=2
+```
