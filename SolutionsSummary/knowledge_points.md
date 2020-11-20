@@ -36,10 +36,15 @@ def midLinkList(head):
 ```
 
 - 计算`list`中点的小小区别
+> 偏右， [1, 2, 3, 4]， mid=3
 ```python
-mid = len(nums) // 2   # 偏右， [1, 2, 3, 4]， mid=3
-
-mid = left + (right - left) // 2
-# 或
-mid = left + ((right - left) >> 1)   # 偏左， [1, 2, 3, 4]， mid=2
+mid = len(nums) // 2   
+left = nums[:mid]
+right = nums[mid:]
+```
+> 偏左， [1, 2, 3, 4]， mid=2
+```python
+mid = lo + (right - lo) // 2
+left = nums[:mid+1]
+right = nums[:mid+1]
 ```
