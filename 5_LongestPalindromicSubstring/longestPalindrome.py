@@ -18,7 +18,7 @@ class Solution:
             ans = max(ans, s[i-rl[i]+1:i+rl[i]], ans, key=len)
         return ans.replace('#', '')
 
-# 方法二： dp
+# 方法二： dp， 超时-待优化
 class Solution:
     def longestPalindromeSubseq(self, s: str) -> int:
         n = len(s)
