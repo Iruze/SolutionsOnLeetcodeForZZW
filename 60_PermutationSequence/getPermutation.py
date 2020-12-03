@@ -26,3 +26,22 @@ class Solution:
         
         visited = [False for _ in range(n)]
         return dfs(n, k)
+
+    
+    
+    
+# 利用 math.factorial() 函数的写法
+class Solution:
+    def getPermutation(self, n: int, k: int) -> str:
+        def dfs(n, k, cur=[], depth=0, visited=0):
+            if depth == n:
+                return ''.join(cur)
+            for i in range(n):
+                if visited & (1 << i) == 0:
+                    ps = math.factorial(n - 1 - depth)
+                    if ps < k:
+                        k -= ps
+                        continue
+                    cur.append(str(i + 1))
+                    return dfs(n, k, cur, depth + 1, visited | (1 << i))
+        return dfs(n, k)
