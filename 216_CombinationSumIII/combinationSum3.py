@@ -14,3 +14,19 @@ class Solution:
         cur, ans = [], []
         dfs()
         return ans
+
+    
+    
+# 回溯的快速写法
+class Solution:
+    def combinationSum3(self, k: int, n: int) -> List[List[int]]:
+        ans = []
+        def dfs(n, k, first=1, pre=[]):
+            if len(pre) == k:
+                if sum(pre) == n:
+                    ans.append(pre[:])
+                return
+            for i in range(first, 10):
+                dfs(n, k, i + 1, pre + [i])
+        dfs(n, k)
+        return ans
