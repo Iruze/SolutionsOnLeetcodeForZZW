@@ -19,7 +19,7 @@
 ```shell
 1)front: 从数组尾部开始，找到不符合逆序排列的最开始的front；    
 2)end: 从尾部开始，找到大于front，同时在front右边的end;    
-3)reverse(front, end): 将front和end交换，并反转(front, end]，即得到大于当前数的最小数  
+3)reverse(front, end): 将front和end交换，并反转(front:]，即得到大于当前数的最小数  
 ```  
 ![下一个更大的排列front](./相关的图/下一个更大的排列1.jpg)
 ![下一个更大的排列end](./相关的图/下一个更大的排列2.jpg)
