@@ -30,18 +30,23 @@ class Solution:
     
     
     
-# 利用 math.factorial() 函数的写法
 class Solution:
     def getPermutation(self, n: int, k: int) -> str:
+        # visited二进制中的第i位，表示第i个数已经被访问
         def dfs(n, k, cur=[], depth=0, visited=0):
             if depth == n:
                 return ''.join(cur)
             for i in range(n):
+                # 如果第i位没有被访问
                 if visited & (1 << i) == 0:
+                    # 当前层的一个子层有 (n-1-depth)!个组合排列
                     ps = math.factorial(n - 1 - depth)
+                    # ps<k说明当前子层的排列数量不满足，换下一个子层，同时k自减ps
                     if ps < k:
                         k -= ps
                         continue
+                    # 寻找的元素在当前的子层，当前元素(第i个元素是i + 1)入队
                     cur.append(str(i + 1))
+                    # 第i个元素已访问，故visited的第i位置1
                     return dfs(n, k, cur, depth + 1, visited | (1 << i))
         return dfs(n, k)
