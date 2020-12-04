@@ -24,14 +24,13 @@ class Solution:
 # 解法二： 直接在while，弹出栈的过程中判断 if num in nums1：
 class Solution:
     def nextGreaterElement(self, nums1: List[int], nums2: List[int]) -> List[int]:
-        if not nums1 or not nums2: return []
-        res = [-1] * len(nums1)
         stack = []
-        for i in range(len(nums2)):
-            while stack and nums2[i] > nums2[stack[-1]]:
-                num = nums2[stack[-1]]
-                if num in nums1:
-                    res[nums1.index(num)] = nums2[i]
-                stack.pop()
+        pos = dict()
+        for i, num in enumerate(nums2):
+            # 维护单调递减栈， num大于stack中的最后一个元素e
+            # ， 则最后一个元素的目标元素是num，即 pos{e: num}
+            while stack and num > nums2[stack[-1]]:
+                pos[nums2[stack.pop()]] = num
             stack.append(i)
-        return res
+        # num在pos中找不到目标元素，则输出-1
+        return [pos.get(num, -1) for num in nums1]
