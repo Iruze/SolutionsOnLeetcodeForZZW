@@ -104,6 +104,7 @@ class Solution:
 <details>
     <summary>解法</summary>
     
+```python
 class Solution:
     def shortestBridge(self, A: List[List[int]]) -> int:
         rows, cols = len(A), len(A[0])
@@ -136,4 +137,5 @@ class Solution:
         for nr, nc in ((r + 1, c), (r - 1, c), (r, c + 1), (r, c - 1)):
             if 0 <= nr < len(A) and 0 <= nc < len(A[0]) and A[nr][nc] == 1:
                 self._dfs(nr, nc, A, island1)
+```
 </details>
