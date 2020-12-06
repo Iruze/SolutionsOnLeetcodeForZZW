@@ -280,10 +280,17 @@ class Trie:
 </details>
 
 # 模板
-### 模板一  字符串`text`中的每个字符开头且存在于字典`dictionary`中的字符的结尾索引
-> text = "mississippi", dictionary = ["is","ppi","hi","sis","i","ssippi"]
->, 找到以`m`开头的所以在`dictionary`的字符在`text`中的结尾索引，
->以`i`开头，以`s`开头，...
+### 模板一  字典`dictionary`中每个原子在字符串`text`中的位置
+> `text = "mississippi"`, `dictionary = ["is","ppi","hi","sis","i","ssippi"]`           
+找到`dictionary`中每个原子在`text`中的位置
+
+示例:
+```shell
+输入：
+big = "mississippi"
+smalls = ["is","ppi","hi","sis","i","ssippi"]
+输出： [[1,4],[8],[],[3],[1,4,7,10],[5]]
+```
 
 <details>
     <summary>通用模板</summary>
