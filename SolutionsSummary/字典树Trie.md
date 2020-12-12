@@ -302,12 +302,12 @@ class Solution:
         #　将所有较短字符插入到字典树中, 即构建字典树
         for word in dictionary:
             trie.insert(word)
-        # start存储字符串text[i:j+1]在text中的起始索引
+        # start存储字符串dictionary[i:j+1]在text中的起始索引
         start = collections.defaultdict(list)
-        for i in range(len(text)):
+        for i in range(len(dictionary)):
             # trie.search()返回所有存在于dictionary且以i开头的字符串的结尾索引j
-            for j in trie.search(text, i):
-                start[text[i:j+1]].append(i)
+            for j in trie.search(dictionary, i):
+                start[dictionary[i:j+1]].append(i)
         #　通过start，找到dictionary中每个对应较短字符串的索引起始索引，即start和small两者的关系转换
         return [start[small] for small in dictionary]
 
