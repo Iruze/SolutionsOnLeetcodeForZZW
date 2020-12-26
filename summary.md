@@ -327,6 +327,9 @@
 ##### 桶排序相关&桶排序处理方法
 - [220. 存在重复元素 III](https://leetcode-cn.com/problems/contains-duplicate-iii/)
 
+### 自定义排序
+- [179. 最大数](https://leetcode-cn.com/problems/largest-number/)
+
 
 # 链表
 ### 链表合并/求和
