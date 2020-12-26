@@ -504,3 +504,50 @@ public class MergeSort {
 - [排序——归并排序（递归实现+迭代实现 ）](https://www.cnblogs.com/xieyupeng/p/7045988.html)
 - [图解排序算法(四)之归并排序](https://www.cnblogs.com/chengxiao/p/6194356.html)
 
+
+# 自定义排序
+- python3中的自定义排序方法
+```python
+
+import functools
+ 
+strs=[3,4,1,2]
+ 
+#自定义排序规则
+def my_compare(x,y):
+    if x>y:
+        return 1
+    elif x<y:
+        return -1
+    return 0
+# 自定义排序结果
+new_strs = sorted(strs,key=functools.cmp_to_key(my_compare))
+```
+- [179. 最大数](https://leetcode-cn.com/problems/largest-number/)
+> 给定一组非负整数 `nums`，重新排列它们每个数字的顺序（每个数字不可拆分）使之组成一个最大的整数。			
+注意：输出结果可能非常大，所以你需要返回一个字符串而不是整数。			
+
+示例 1：
+```
+输入：nums = [10,2]
+输出："210"
+```
+<details>
+    <summary>解法</summary>
+    
+```python
+class Solution:
+    def largestNumber(self, nums: List[int]) -> str:
+        # 自定义排序规则
+        def my_comparison(x, y):
+            x, y = str(x), str(y)
+            if x + y > y + x:
+                return 1
+            else:
+                return -1
+        # 逆序排列
+        nums.sort(key=functools.cmp_to_key(my_comparison), reverse=True)
+        nums = [*map(str, nums)]
+        return ''.join(nums) if nums[0] != '0' else '0'
+```
+</details>
