@@ -58,7 +58,8 @@ dic.popitem()                     # 移除最后一个
 dic.popitem(last=False)           # 移除第一个
 
 #move_to_end(指定一个key，把对应的key-value移到最后)
-dic.move_to_end('k1')
+dic.move_to_end('k1')                       # 移到最后
+dic.move_to_end('k1', last=False)           # 移到开头
 
 # 其他:
 跟dict都有 items(), keys(), values()方法, 如果dict初始化不是
