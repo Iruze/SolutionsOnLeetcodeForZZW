@@ -62,7 +62,7 @@ dic.move_to_end('k1')                       # 移到最后
 dic.move_to_end('k1', last=False)           # 移到开头
 
 # 其他:
-跟dict都有 items(), keys(), values()方法, 如果dict初始化不是
+跟dict都有 items(), keys(), values(), setdefault()方法, 如果dict初始化不是
 顺序插入的, 即直接用一组key-value初始化, 则dict仍然是无序的.
 另外, python3.6+中普通dict是有序的.
 ```
