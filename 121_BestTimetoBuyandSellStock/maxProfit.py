@@ -1,16 +1,16 @@
-# 解法一： 单调栈
+# 解法一： 普通解法，
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        stack = []
-        diff = float('-Inf')
-        for i in range(len(prices)):
-            # stack维护一个单调递减的栈
-            if not stack or prices[stack[-1]] > prices[i]:
-                stack.append(i)
-            # 更新diff
-            elif prices[i] - prices[stack[-1]] > diff:
-                    diff = prices[i] - prices[stack[-1]]
-        return diff if diff > 0 else 0
+        if len(prices) < 2:
+            return -0
+        # min_v记录截止到目前的最低的股票价格
+        min_v = prices[0]
+        ans = 0
+        for i, p in enumerate(prices):
+            # 更新min_v
+            min_v = min(min_v, p)
+            ans = max(ans, p - min_v)
+        return ans
 
 # 解法二： dp
 class Solution:
