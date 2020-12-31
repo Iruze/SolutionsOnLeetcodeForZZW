@@ -17,7 +17,11 @@
 ]
 输出: 1->1->2->3->4->4->5->6
 ```
-```python3
+
+<details>
+    <summary>解法</summary>
+    
+```python
 # 方法一：　每次合并两个链表，转化为合并两个链表(略)
 
 # 方法二：　堆排序
@@ -42,6 +46,8 @@ class Solution:
             node = node.next
         return dummy.next
 ```
+</details>
+
 
 - [378. 有序矩阵中第K小的元素](https://leetcode-cn.com/problems/kth-smallest-element-in-a-sorted-matrix/)
 > 给定一个 `n x n` 矩阵，其中每行和每列元素均按升序排序，找到矩阵中第 `k` 小的元素。     
@@ -59,8 +65,10 @@ k = 8,
 返回 13。
 ```
 
-```python3
-# 方法一：　堆排序, O(klogn)
+<details>
+    <summary>方法一：　堆排序, O(klogn)</summary>
+    
+```python
 class Solution:
     def kthSmallest(self, matrix: List[List[int]], k: int) -> int:
         hp = []
@@ -74,7 +82,13 @@ class Solution:
                 heapq.heappush(hp, (matrix[i][j + 1], i, j + 1))
             k -= 1
         return val
-# 方法二：　二分（非常规/二分变体), O(m+n)*log(matrix[-1][-1]-matrix[0][0])
+```
+</details>
+
+<details>
+    <summary>方法二：　二分（非常规/二分变体), O(m+n)*log(matrix[-1][-1]-matrix[0][0])</summary>
+    
+```python
 class Solution:
     def kthSmallest(self, matrix: List[List[int]], k: int) -> int:
         def rank(num):
@@ -98,6 +112,8 @@ class Solution:
                 hight = mid
         return low
 ```
+</details>
+
 
 # 搜索矩阵
 该矩阵有三种形式:
@@ -125,7 +141,11 @@ matrix = [
 target = 3
 输出: true
 ```
-```python3
+
+<details>
+    <summary>解法</summary>
+    
+```python
 class Solution:
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
         # 二分查找找到<=target的元素的索引
@@ -154,6 +174,10 @@ class Solution:
         row_idx = binarySearch(matrix[col_idx], target)
         return True if matrix[col_idx][row_idx] == target else False
 ```
+</details>
+
+
+
 ### II. 递增－每行递增，每列递增;
 **思想:** 从 **右上角** 或者 **左下角** 出发，**横竖搜索**
 - [240. 搜索二维矩阵 II](https://leetcode-cn.com/problems/search-a-2d-matrix-ii/)
@@ -174,7 +198,11 @@ class Solution:
   [18, 21, 23, 26, 30]
 ]
 ```
-```python3
+
+<details>
+    <summary>解法</summary>
+    
+```python
 class Solution:
     def searchMatrix(self, matrix, target):
         """
@@ -194,6 +222,8 @@ class Solution:
                 c -= 1
         return False
 ```
+</details>
+
 ### III. 稀疏递增－每行递增(较少)
 
 ## 其他类似题目:
