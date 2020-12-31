@@ -163,13 +163,13 @@ class Solution:
         
         if not matrix or not matrix[0]:
             return False
+        if target < matrix[0][0] or target > matrix[-1][-1]:
+            return False
         # import numpy as np
         # matrix = np.array(matrix)
         
         # 纵坐标二分：　找到target可能位于的行
         col_idx = binarySearch([x[-1] for x in matrix], target)
-        if target < matrix[0][0] or target > matrix[-1][-1]:
-            return False
         # 横坐标二分：　找到target可能位于的列
         row_idx = binarySearch(matrix[col_idx], target)
         return True if matrix[col_idx][row_idx] == target else False
