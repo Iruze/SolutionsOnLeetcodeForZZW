@@ -222,10 +222,9 @@ class Solution:
         nums = [1] + nums + [1]
 
         @lru_cache(None)
-        def dfs(lo, hi):
-            # 因为左右各加了一个[1], 所以 hi - lo >= 2
-            if hi - lo < 2:
-                return 0
+        def dfs(lo, hi):                # 都是开区间 (lo, hi), 因为左右各加了一个[1],但是这个[1]取不到
+            if hi - lo < 2:             # 因为左右各加了一个[1], 所以 hi - lo >= 2
+                return 0                # 最后取的位置i上的元素
             return max(nums[lo] * nums[i] * nums[hi] + dfs(lo, i) + dfs(i, hi) for i in range(lo + 1, hi))
 
         return dfs(0, len(nums) - 1)
