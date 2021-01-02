@@ -223,6 +223,7 @@ class Solution:
 
         @lru_cache(None)
         def dfs(lo, hi):
+            # 因为左右各加了一个[1], 所以 hi - lo >= 2
             if hi - lo < 2:
                 return 0
             return max(nums[lo] * nums[i] * nums[hi] + dfs(lo, i) + dfs(i, hi) for i in range(lo + 1, hi))
