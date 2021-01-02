@@ -271,6 +271,7 @@ class Solution:
         #             dp[r][c] = max(1, min(dp[r + 1][c], dp[r][c + 1]) - dungeon[r][c])
         # return dp[0][0]
         
+        # 自顶向下
         @functools.lru_cache(None)
         def dp(i, j):
             if i == rows - 1 and j == cols - 1:
