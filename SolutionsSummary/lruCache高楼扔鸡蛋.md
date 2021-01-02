@@ -228,6 +228,23 @@ class Solution:
             return max(nums[lo] * nums[i] * nums[hi] + dfs(lo, i) + dfs(i, hi) for i in range(lo + 1, hi))
 
         return dfs(0, len(nums) - 1)
+        
+        
+        
+# 官网新增了测试case, 现在的记忆化递归解法会超时, 改写成dp可以通过:
+class Solution:
+    def maxCoins(self, nums: List[int]) -> int:
+
+        nums = [1] + nums + [1]
+        n = len(nums)
+        dp = [[0 for _ in range(n)] for _ in range(n)]
+
+        for r in range(2, n):
+            # dp[l][r]仍然表示的是开区间(l, r), 注意l是逆序的
+            for l in range(r - 2, -1, -1):
+                dp[l][r] = max(nums[l] * nums[k] * nums[r] + dp[l][k] + dp[k][r] for k in range(l + 1, r))
+        
+        return dp[0][n - 1]
 ```
 </details>
 
