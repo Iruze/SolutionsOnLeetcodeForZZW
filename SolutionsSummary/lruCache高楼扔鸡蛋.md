@@ -145,7 +145,7 @@ class Solution:
         #      从(l, (r + l) / 2)内选择数字作为第一次尝试, 右边区间都比左边区间大,开销肯定大于左边, 总体开销也较大
         #      所以, 从((l + r) / 2, r)内选择, 这样两个区间的开销更接近, 且总体开销会更小
         #      """
-        #     return min(x + max(helper(l, x - 1), helper(x + 1, r)) for x in range((l + r) >> 1, r))
+        #     return min(x + max(helper(l, x - 1), helper(x + 1, r)) for x in range((l + r) >> 1, r + 1))
         # return helper(1, n)
 
         # 方法二: dp方法, 将上述递归改为dp
