@@ -109,6 +109,7 @@ class Solution:
 
         @lru_cache(None)
         def dp(K, M):
+            # 因为K<=M, 所以K=1的时候M=0或者M=1
             if K == 1 or M == 1: return M
             return dp(K - 1, M - 1) + dp(K, M - 1) + 1
         
