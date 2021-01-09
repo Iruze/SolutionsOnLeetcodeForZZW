@@ -4,40 +4,29 @@ class MinStack:
         """
         initialize your data structure here.
         """
-        self.data = []
-        self.order = []
+        self.app = list()
+        # decrease维护一个单调非递增栈
+        self.decrease = list()
+
 
     def push(self, x: int) -> None:
-        self.data.append(x)
-        if not self.order or x < self.order[-1]:
-            self.order.append(x)
-        else:
-            self.order.append(self.order[-1])
+        self.app.append(x)
+        # 元素可能相同，　故而相等的也要加入到decrease中去
+        if not self.decrease or x <= self.decrease[-1]:
+            self.decrease.append(x)
+
 
     def pop(self) -> None:
-        if self.data:
-            self.order.pop()
-            return self.data.pop()
-        else:
-            return -float('Inf')
+        ans = self.app.pop()
+        # 如果pop出来的是最小值，　则decrease中的队列也要减去它
+        if ans == self.decrease[-1]:
+            self.decrease.pop()
+        return ans
+
 
     def top(self) -> int:
-        if self.data:
-            return self.data[-1]
-        else:
-            return -float('Inf')
-            
+        return self.app[-1]
+
 
     def getMin(self) -> int:
-        if self.order:
-            return self.order[-1]
-        else:
-            return -float('Inf')
-
-
-# Your MinStack object will be instantiated and called as such:
-# obj = MinStack()
-# obj.push(x)
-# obj.pop()
-# param_3 = obj.top()
-# param_4 = obj.getMin()
+        return self.decrease[-1]
