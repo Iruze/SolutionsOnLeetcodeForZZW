@@ -9,10 +9,10 @@
     
 ```python
 def bubbleSort(nums):
-	for i in range(len(nums) - 1, -1, -1):
-		for j in range(i):
-			if nums[j] > nums[j + 1]:
-				nums[j], nums[j + 1] = nums[j + 1], nums[j]
+    for i in range(len(nums) - 1, -1, -1):
+        for j in range(i):
+            if nums[j] > nums[j + 1]:
+                nums[j], nums[j + 1] = nums[j + 1], nums[j]
 ```
 </details>
  
@@ -23,11 +23,11 @@ def bubbleSort(nums):
     
 参考： [白话经典算法系列之二 直接插入排序的三种实现](https://blog.csdn.net/MoreWindows/article/details/6665714#commentBox)    
 ```python
- def insertSort(nums):
+def insertSort(nums):
     for i in range(1, len(nums)):
         for j in range(i - 1, -1, -1):
             if nums[j] > nums[j + 1]:
-                nums[j], nums[j + 1] = nums[j + 1], nums[j]
+                 nums[j], nums[j + 1] = nums[j + 1], nums[j]
             else:
                 break
 ```
@@ -39,9 +39,9 @@ def bubbleSort(nums):
 ```python
 # 大顶堆， logn次比较, logn次交换
 def swim(nums, k):
-	while k > 0 and nums[k] > nums[(k - 1) // 2]:
-		nums[k], nums[(k - 1) // 2] = nums[(k - 1) // 2], nums[k]
-		k = (k - 1) // 2     
+    while k > 0 and nums[k] > nums[(k - 1) // 2]:
+        nums[k], nums[(k - 1) // 2] = nums[(k - 1) // 2], nums[k]
+        k = (k - 1) // 2
 ```
 
 堆排序-下沉
@@ -49,14 +49,14 @@ def swim(nums, k):
 ```python
 # 大顶堆， 2logn次比较, logn次交换
 def sink(nums, k):
-	while 2 * k + 1 < len(nums):
-		j = 2 * k + 1
-		if j + 1 < len(nums) and nums[j] < nums[j + 1]:
+    while 2 * k + 1 < len(nums):
+        j = 2 * k + 1
+        if j + 1 < len(nums) and nums[j] < nums[j + 1]:
 			j += 1
-		if nums[j] < nums[k]:
-			break
-		nums[j], nums[k] = nums[k], nums[j]
-		k = j     
+        if nums[j] < nums[k]:
+            break
+        nums[j], nums[k] = nums[k], nums[j]
+        k = j
 ```
 
 ## 堆排序
@@ -241,14 +241,14 @@ class Solution:
 	
 ```python
 def smallestK(self, arr: List[int], k: int) -> List[int]:
-        ans = []
-        for a in arr:
-            if len(ans) < k:
-	    	# python只有最小堆，故元素取反，等效于建立a实际值的最大堆
-                heapq.heappush(ans, -a)
-            else:
-                heapq.heappushpop(ans, -a)
-        return [-x for x in ans]
+    ans = []
+    for a in arr:
+        if len(ans) < k:
+	    # python只有最小堆，故元素取反，等效于建立a实际值的最大堆
+            heapq.heappush(ans, -a)
+        else:
+            heapq.heappushpop(ans, -a)
+    return [-x for x in ans]
 ```
 
 </details>
