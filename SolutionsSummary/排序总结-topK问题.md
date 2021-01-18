@@ -52,7 +52,7 @@ def sink(nums, k):
     while 2 * k + 1 < len(nums):
         j = 2 * k + 1
         if j + 1 < len(nums) and nums[j] < nums[j + 1]:
-			j += 1
+            j += 1
         if nums[j] < nums[k]:
             break
         nums[j], nums[k] = nums[k], nums[j]
