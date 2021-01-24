@@ -103,7 +103,7 @@ class Solution:
 
 本题两种解法- **并查集**和**无向图DFS**
 <details>
-    <summary>解法</summary>
+    <summary>解法一- 图DFS</summary>
     
 ```python
 class Solution:
