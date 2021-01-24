@@ -22,7 +22,8 @@ for i, j in prerequisites:
 
 
 # 例题
-## 无向图
+## 无向图(连通图)
+给定的无向图一般默认是**连通图**
 - [886. 可能的二分法](https://leetcode-cn.com/problems/possible-bipartition/)
 >给定一组 `N` 人（编号为 `1`, `2`, ..., `N`）， 我们想把每个人分进任意大小的两组。    
 每个人都可能不喜欢其他人，那么他们不应该属于同一组。    
@@ -142,6 +143,51 @@ class Solution:
                 visited.clear()
                 ans.append(dfs(s, e))
         return ans
+```
+</details>
+
+**BFS搜索图**
+- [310. 最小高度树](https://leetcode-cn.com/problems/minimum-height-trees/)
+> 给你一棵包含 n 个节点的数，标记为 0 到 n - 1 。给定数字 n 和一个有 n - 1 条无向边的 edges 列表（每一个边都是一对标签），其中 edges[i] = [ai, bi] 表示树中节点 ai 和 bi 之间存在一条无向边。       
+可选择树中任何一个节点作为根。当选择节点 x 作为根节点时，设结果树的高度为 h 。在所有可能的树中，具有最小高度的树（即，min(h)）被称为 最小高度树 。        
+请你找到所有的 最小高度树 并按 任意顺序 返回它们的根节点标签列表。     
+
+
+<details>
+    <summary>解法一: BFS搜索 </summary>
+    
+```python
+class Solution:
+    def findMinHeightTrees(self, n: int, edges: List[List[int]]) -> List[int]:
+        graph = collections.defaultdict(set)
+        degree = [0] * n
+        # 1. 刻画图
+        for s, e in edges:
+            graph[s].add(e)
+            graph[e].add(s)
+            degree[s] += 1
+            degree[e] += 1
+        # 2. 找到所有的"叶子节点"
+        leaves = [leaf for leaf in range(n) if degree[leaf] == 1] if n > 1 else [0]
+        rst = n
+        # 广度优先搜索 BFS
+        while rst > 2:
+            # 当只有两个节点的时候, 终止搜索
+            rst -= len(leaves)
+            # 下一层记录
+            leaves_nxt = []
+            for l in leaves:
+                # 当前"叶子节点"-度清零
+                degree[l] = 0
+                for con in graph[l]:
+                    if degree[con] > 1:
+                        degree[con] -= 1
+                        # 找到"根节点"的标准
+                        if degree[con] == 1:
+                            leaves_nxt.append(con)
+            # 下一层做准备
+            leaves_nxt, leaves = [], leaves_nxt
+        return leaves
 ```
 </details>
 
