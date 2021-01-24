@@ -28,6 +28,6 @@ class Solution:
             return True
         
         for i in range(len(graph)):             # 检查所有的0-(n-1), 如果都不矛盾,证明能够按照要求"安排"
-            if i not in group and not dfs(i):
-                return False
+            if i not in group and not dfs(i):   # 此处必须强调i不在group, 因为前面搜索中可能将
+                return False                    # i判定给了-1, 但是此时如果再次dfs搜索, 将其默认为1,会矛盾
         return True
