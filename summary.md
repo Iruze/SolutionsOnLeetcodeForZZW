@@ -441,6 +441,7 @@
 - [716. 最大栈](https://leetcode-cn.com/problems/max-stack/)
 - [面试题 03.04. 化栈为队](https://leetcode-cn.com/problems/implement-queue-using-stacks-lcci/)
 - [895. 最大频率栈](https://leetcode-cn.com/problems/maximum-frequency-stack/)
+- [225. 用队列实现栈](https://leetcode-cn.com/problems/implement-stack-using-queues/)
 
 ### 哈希集合/哈希映射
 - [705. 设计哈希集合](https://leetcode-cn.com/problems/design-hashset/)
