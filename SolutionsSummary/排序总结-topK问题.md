@@ -147,6 +147,46 @@ def partition(nums, start, end):
     nums[small], nums[end] = nums[end], nums[small]
     return small
 ```
+## 基于partition思想的变种例题
+- [283. 移动零](https://leetcode-cn.com/problems/move-zeroes/)
+> 给定一个数组 nums，编写一个函数将所有 0 移动到数组的末尾，同时保持非零元素的相对顺序。
+<details>
+    <summary>解法</summary>
+    
+```python
+class Solution:
+    def moveZeroes(self, nums: List[int]) -> None:
+        left, right = -1, 0
+        for right, num in enumerate(nums):
+            if num != 0:
+                left += 1
+                if left != right:
+                    nums[left], nums[right] = nums[right], nums[left]
+```
+</details>
+
+
+- [75. 颜色分类](https://leetcode-cn.com/problems/sort-colors/)
+> 给定一个包含红色、白色和蓝色，一共 n 个元素的数组，原地对它们进行排序，使得相同颜色的元素相邻，并按照红色、白色、蓝色顺序排列。
+<details>
+    <summary>解法</summary>
+    
+```python
+class Solution:
+    def sortColors(self, nums: List[int]) -> None:
+        left_0, right_2 = -1, len(nums)
+        for i in range(right_2):
+            while (nums[i] == 0 or nums[i] == 2) and left_0 < i and i < right_2:
+                if nums[i] == 0:
+                    left_0 += 1
+                    nums[i], nums[left_0] = nums[left_0], nums[i]
+                if nums[i] == 2:
+                    right_2 -= 1
+                    nums[i], nums[right_2] = nums[right_2], nums[i]
+
+```
+</details>
+
 
 ## 快排
 快排基于上面的`partition`模块        
