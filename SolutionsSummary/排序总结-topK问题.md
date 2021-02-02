@@ -148,7 +148,7 @@ def partition(nums, start, end):
     return small
 ```
 ## 基于partition思想的变种例题 - 相对位置问题
-- 思路: 保持**"谁"**相对位置不变, 就**"判断"**谁:
+- 思路: 保持"谁"相对位置不变, 就"判断"谁:
 ```shell
 保持非'0'元素相对位置: if num != 0:
 
