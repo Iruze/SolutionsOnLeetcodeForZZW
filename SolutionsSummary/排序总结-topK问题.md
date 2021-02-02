@@ -187,6 +187,38 @@ class Solution:
 ```
 </details>
 
+链表分割不属于`partition`的应用, 但是也是类似上面两题的**相对位置**的问题,可以拿出来比较一下
+- [86. 分隔链表](https://leetcode-cn.com/problems/partition-list/)
+> 给你一个链表和一个特定值 x ，请你对链表进行分隔，使得所有小于 x 的节点都出现在大于或等于 x 的节点之前。		
+你应当保留两个分区中每个节点的初始相对位置。
+```shell
+示例：
+
+输入：head = 1->4->3->2->5->2, x = 3
+输出：1->2->2->4->3->5
+```
+<details>
+    <summary>解法</summary>
+    
+```python
+class Solution:
+    def partition(self, head: ListNode, x: int) -> ListNode:
+        small, larget = ListNode(-1), ListNode(-1)
+        ps, pl, p = small, larget, head
+        while p:
+            if p.val < x:
+                ps.next = p 
+                ps = ps.next
+            else:
+                pl.next = p 
+                pl = pl.next
+            p = p.next
+        ps.next, pl.next = larget.next, None
+        return small.next
+```
+</details>
+
+
 
 ## 快排
 快排基于上面的`partition`模块        
