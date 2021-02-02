@@ -26,7 +26,7 @@ class Solution:
 
     
 # 解法二: O(n)
-# 后序遍历, 每一个节点遍历一次
+# 后序遍历, 每一个节点遍历一次, 缺点:　没有利用到＂完全二叉树＂的性质
 class Solution:
     def countNodes(self, root: TreeNode) -> int:
         if not root: return 0
