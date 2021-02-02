@@ -148,10 +148,12 @@ def partition(nums, start, end):
     return small
 ```
 ## 基于partition思想的变种例题 - 相对位置问题
-> 思路: 保持"谁"相对位置不变, 就"判断"谁:			
+- 思路: 保持"谁"相对位置不变, 就"判断"谁:
+```shell
 保持非'0'元素相对位置: if num != 0:			
 保持'0'元素相对位置: if num == 0:				
 保持小于'x'元素相对位置: if num < x:		
+```
 
 - [283. 移动零](https://leetcode-cn.com/problems/move-zeroes/)
 > 给定一个数组 nums，编写一个函数将所有 0 移动到数组的末尾，同时保持非零元素的相对顺序。
