@@ -5,6 +5,8 @@
 #         self.left = None
 #         self.right = None
 
+# 解法一: O(logn * logn)
+# 每一层里面都需要求一次高度,单次求高度时间为O(logn), 所以总的时间复杂度为 O(logn * logn)
 class Solution:
     def countNodes(self, root: TreeNode) -> int:
         if not root: return 0
@@ -21,3 +23,11 @@ class Solution:
             level += 1
             root = root.left
         return level
+
+    
+# 解法二: O(n)
+# 后序遍历, 每一个节点遍历一次
+class Solution:
+    def countNodes(self, root: TreeNode) -> int:
+        if not root: return 0
+        return 1 + self.countNodes(root.left) + self.countNodes(root.right)
