@@ -227,6 +227,38 @@ class Solution:
 
 </details>
 
+## 最大的二叉搜索树
+- [333. 最大 BST 子树](https://leetcode-cn.com/problems/largest-bst-subtree/)
+> 给定一个二叉树，找到其中最大的二叉搜索树（BST）子树，并返回该子树的大小。其中，最大指的是子树节点数最多的。
+<details>
+    <summary>解法</summary>
+    
+```python3
+"""
+解题思路
+判断一个二叉树是否合法：左面子树中最大值<当前节点的值<右边子树中的最小值
+我们进行递归判断，为空节点时，返回float("inf"), float("-inf")，这样它的任何父节点都将合法
+如果当前节点不满足约束条件，返回float("-inf"), float("inf")，这样它的任何父节点都将不合法
+"""
+
+class Solution:
+    def largestBSTSubtree(self, root: TreeNode) -> int:
+
+        def helper(root):
+            if not root:
+                return float('Inf'), float('-Inf'), 0
+            l_min, l_max, l = helper(root.left)
+            r_min, r_max, r = helper(root.right)
+            if l_max < root.val < r_min:
+                return min(root.val, l_min), max(root.val, r_max),l + r + 1
+            return float('-Inf'), float('Inf'), max(l, r)
+
+        return helper(root)[2]
+```
+
+</details>
+
+
 ## 二叉树的序列化
 - [652. 寻找重复的子树](https://leetcode-cn.com/problems/find-duplicate-subtrees/)
 > 给定一棵二叉树，返回所有重复的子树。对于同一类的重复子树，你只需要返回其中任意一棵的根结点即可。          
