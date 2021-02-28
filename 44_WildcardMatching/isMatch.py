@@ -1,3 +1,5 @@
+
+# 解法一: 标准dp
 class Solution:
     def isMatch(self, s: str, p: str) -> bool:
         ls, lp = len(s), len(p)
@@ -17,3 +19,27 @@ class Solution:
                 elif p[j - 1] == '*':
                     dp[i][j] = dp[i - 1][j] or dp[i][j - 1]
         return dp[-1][-1]
+
+    
+# 解法二: 记忆化递归
+class Solution:
+    def isMatch(self, s: str, p: str) -> bool:
+
+        @functools.lru_cache(None)
+        def helper(i, j):
+            if j == len(p): 
+                return i == len(s)
+            # i到了s末尾, 则j也到了p末尾或者p[j:]是若干个个'*'字符
+            if i == len(s):
+                return not p[j:] or p[j:] == '*' * (len(p) - j)
+            # 单个字符匹配
+            if p[j] == s[i] or p[j] == '?':
+                return helper(i + 1, j + 1)
+            # p[j]是'*', 有三种情况
+            if p[j] == '*':
+                # p[j]匹配:     1个s[i]              大于1个s[i]           空字符  
+                return helper(i + 1, j + 1) or helper(i + 1, j) or helper(i, j + 1)
+            # p[j]不等于s[i]且不是特殊字符'*'和'?'
+            return False
+        
+        return helper(0, 0)
