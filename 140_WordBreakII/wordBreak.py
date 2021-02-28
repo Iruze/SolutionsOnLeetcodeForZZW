@@ -6,37 +6,40 @@ python3 动态规划 + 回溯
 """
 class Solution:
     def wordBreak(self, s: str, wordDict: List[str]) -> List[str]:
-        n = len(s)
-        output = []
-        # 1. 判断wordDict中的单词是否可以构建s
-        def constructed():
-            if not wordDict:
-                return False
-            if not s:
-                return True
-            dp = [False for _ in range(n + 1)]
-            dp[0] = True
-            # dp里面的dp[i]表示基1的第i个元素
-            for i in range(1, n + 1):
-                for j in range(i):
-                    # s[j:i]是基0的，相当于基1的第j+1个元素开始
-                    if dp[j] and s[j:i] in wordDict:
-                        dp[i] = True
-                        break 
-            return dp[-1]
 
-        # 2. 回溯求分解结果
-        def backtrack(cur, s):
-            if not s:
-                output.append(cur.strip(' ')[:])
-                return
+        # list转化为set, 加快查询
+        wordSet = set(wordDict)
+
+        @functools.lru_cache(None)
+        def constructed(s):
+            if not s: return True
+            included = False
             for i in range(1, len(s) + 1):
-                if s[:i] in wordDict:
-                    cur += s[:i] + ' '
-                    backtrack(cur, s[i:])
-                    cur = cur.strip()[:-i]
+                if s[:i] in wordSet:
+                    included |= constructed(s[i:])
+            return included
+            # n = len(s)
+            # dp = [False] * (n + 1)
+            # dp[0] = True
+            # for i in range(1, n + 1):
+            #     for j in range(i):
+            #         if dp[j] and s[j:i] in wordDict:
+            #             dp[i] = True
+            #             break 
+            # return dp[-1]
 
-        # 只有由wordDict可以构建s才用 backtrack() 回溯求分解结果
-        if constructed():
-            backtrack('', s)
-        return output
+        # 回溯递归搜索s的构成方式
+        def backtrace(s, pre=''):
+            # 回溯递归终止条件
+            if not s:
+                ans.append(pre[:])
+            for i in range(1, len(s) + 1):
+                if s[:i] in wordSet:
+                    cur = pre + ' ' + s[:i] if pre else s[:i]
+                    backtrace(s[i:], cur)
+        
+        ans = []
+        # 先判断s是否可以由wordDict构成
+        if constructed(s):
+            backtrace(s)
+        return ans
