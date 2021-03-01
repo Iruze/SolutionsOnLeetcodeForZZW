@@ -9,21 +9,27 @@ class Solution:
         """
         Do not return anything, modify root in-place instead.
         """
-        self.preNode = TreeNode(float('-Inf'))
-        self.firstNode = None
-        self.secondNode = None
+        """
+        思路:
+        中序遍历:  1234, 交换了1和4
+        变成了:    4321
+        那么, 第一个节点就是4, 第二个节点就是1, 找到first和second的节点后, 交换他们的"值"即可
+        """
+
+        self.firstnode = None
+        self.secondnode = None
+        self.prenode = TreeNode(float('-inf'))
 
         def inorder(root):
-            if not root: return
+            if not root:
+                return
             inorder(root.left)
-            # 左子树上第一个错误节点是大于root的节点
-            if not self.firstNode and self.preNode.val >= root.val:
-                self.firstNode = self.preNode
-            # 左子树上第二个错误节点是root的节点(如果存在的话)
-            if self.firstNode and self.preNode.val >= root.val:
-                self.secondNode = root
-            self.preNode = root
+            if not self.firstnode and self.prenode.val > root.val:
+                self.firstnode = self.prenode
+            if self.firstnode and self.prenode.val > root.val:
+                self.secondnode = root
+            self.prenode = root
             inorder(root.right)
-
+        
         inorder(root)
-        self.firstNode.val, self.secondNode.val = self.secondNode.val, self.firstNode.val        
+        self.firstnode.val, self.secondnode.val = self.secondnode.val, self.firstnode.val
