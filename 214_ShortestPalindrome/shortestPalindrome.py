@@ -13,3 +13,30 @@ class Solution:
             hi -= 1
         # hi左边是回文的,hi右边则需要镜像到s的前面去即可
         return s[hi:][::-1] + s
+
+    
+    
+# 方法二： 基于马拉车算法， 只需要加一行， 复杂度为 O(n)
+class Solution:
+    def shortestPalindrome(self, s: str) -> str:
+        S = '#' + '#'.join(s) + '#'
+        n = len(S)
+        rl = [0] * n
+        max_right = 0
+        pos = 0
+        hi = 0    # 找到以S[0]开头的最长子回文串的最右端
+        for i, c in enumerate(S):
+            if i < max_right:
+                rl[i] = min(max_right - i, rl[2 * pos - i])
+            else:
+                rl[i] = 1
+            while i - rl[i] >= 0 and i + rl[i] < n and S[i - rl[i]] == S[i + rl[i]]:
+                rl[i] += 1
+            if i + rl[i] - 1 > max_right:
+                max_right = i + rl[i] - 1
+                pos = i
+            if rl[i] == i + 1:
+                hi = i + rl[i] - 1
+        # 结果则是： s[:hi:-1] + s
+        return (S[:hi:-1] + S).replace('#', '')
+    
