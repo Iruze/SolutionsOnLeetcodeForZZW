@@ -8,9 +8,9 @@ class Solution:
                     ans.append(exp)
                 return
             for i in range(1, len(num) + 1):
-                # 前缀为0的数字无效
+                # 前缀为0的所有数字无效, 直接终止
                 if i > 1 and num[0] == '0':
-                    continue
+                    break
                 cur = int(num[:i])
                 # 第一次递归的时候，表达式exp为空
                 if exp == '':
