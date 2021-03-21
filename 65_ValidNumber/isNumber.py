@@ -13,6 +13,9 @@ class Solution:
             float(sl[0])
         except:
             return False
+        # 当s为正负inf的时候
+        if abs(float(sl[0])) == float('inf'):
+            return False
         if len(sl) == 2:
             # e之前有空格
             if sl[1][0] == ' ':
@@ -21,6 +24,4 @@ class Solution:
                 int(sl[1])
             except:
                 return False
-        if abs(float(sl[0])) == float('inf'):
-            return False
         return True
