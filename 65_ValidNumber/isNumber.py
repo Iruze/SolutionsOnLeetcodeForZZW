@@ -1,11 +1,12 @@
 class Solution:
     def isNumber(self, s: str) -> bool:
         if not s: return False
+        
         sl = re.split(r'[eE]', s.strip())
         # e前后不包含数字、s中含有多个e或E
         if '' in sl or len(sl) > 2:
             return False
-        # e之后又空格
+        # e之后有空格
         if sl[0][-1] == ' ':
             return False
         try:
@@ -20,4 +21,6 @@ class Solution:
                 int(sl[1])
             except:
                 return False
-        return True 
+        if abs(float(sl[0])) == float('inf'):
+            return False
+        return True
