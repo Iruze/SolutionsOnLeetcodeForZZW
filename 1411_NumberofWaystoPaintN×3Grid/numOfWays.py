@@ -42,6 +42,10 @@ class Solution:
         ABA, ABC = 6, 6
         MOD = 10 ** 9 + 7
         for i in range(2, n + 1):
+            """
+            当前 ABA : 下一层 BAB, BAC, BCB, CAB, CAC --> 3*ABA + 2*ABC
+            当前 ABC : 下一层 BAB, BCA, BCB, CAB --> 2*ABA + 2*ABC
+            """
             ABA, ABC = 3 * ABA + 2 * ABC, 2 * (ABC + ABA)
             ABA %= MOD
             ABC %= MOD
