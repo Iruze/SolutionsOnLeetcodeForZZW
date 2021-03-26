@@ -84,6 +84,20 @@ class Solution:
 
 - [542. 01 矩阵](https://leetcode-cn.com/problems/01-matrix/)
 > 给定一个由 0 和 1 组成的矩阵，找出每个元素到最近的 0 的距离。
+```shell
+示例 1：
+
+输入：
+[[0,0,0],
+ [0,1,0],
+ [0,0,0]]
+
+输出：
+[[0,0,0],
+ [0,1,0],
+ [0,0,0]]
+```
+
 
 <details>
     <summary>解法</summary>
