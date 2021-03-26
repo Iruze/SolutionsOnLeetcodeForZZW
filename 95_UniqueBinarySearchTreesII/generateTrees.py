@@ -1,6 +1,4 @@
-# 记忆化递归
-
-
+# 记忆化递归, 对已成的二叉树cache, 加速后续搜索
 
 class Solution:
     def generateTrees(self, n: int) -> List[TreeNode]:
