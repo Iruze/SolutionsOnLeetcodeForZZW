@@ -1,17 +1,13 @@
 class Solution:
     def numRollsToTarget(self, d: int, f: int, target: int) -> int:
-        
-        self.m = 10 ** 9 + 7
 
-        from functools import lru_cache
+        MOD = 10 ** 9 + 7
+
         @lru_cache(None)
-        def helper(d, f, target):
+        def helper(d, target):
             if target <= 0: return 0
-            if d == 1 and target <= f: return 1
-            if d == 1 and target > f: return 0
-            ans = 0
-            for i in range(1, f + 1):
-                ans += helper(d - 1, f, target - i)
-            return ans % self.m
+            if d == 1: return +(f >= target)
+            return sum(helper(d - 1, target - f0) for f0 in range(1, f + 1)) % MOD
         
-        return helper(d, f, target)
+        return helper(d, target)
+        
