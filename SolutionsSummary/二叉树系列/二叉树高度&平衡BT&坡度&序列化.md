@@ -137,6 +137,11 @@ class Solution:
 
 </details>
 
+## 相似题目:            
+- [](https://leetcode-cn.com/problems/longest-univalue-path/)       
+- [298. 二叉树最长连续序列](https://leetcode-cn.com/problems/binary-tree-longest-consecutive-sequence/)
+
+
 ## 二叉树的坡度
 
 - [563. 二叉树的坡度](https://leetcode-cn.com/problems/binary-tree-tilt/)
