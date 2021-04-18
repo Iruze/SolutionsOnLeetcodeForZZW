@@ -1,6 +1,6 @@
 class Solution:
     def findDuplicate(self, nums: List[int]) -> int:
-        start, end = 1, len(nums)
+        start, end = 1, len(nums) - 1
         while start < end:
             mid = (start + end) // 2
             countLeft = sum(1 for num in nums if num >= start and num <= mid)
