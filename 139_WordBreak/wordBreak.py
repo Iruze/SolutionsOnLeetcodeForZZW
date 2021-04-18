@@ -18,10 +18,10 @@ class Solution:
         @functools.lru_cache(None)
         def dfs(s):
             if not s: return True
-            included = False
-            for i in range(1, n + 1):
-                if s[:i] in wordSet:
-                    included |= dfs(s[i:])
-            return included
+            for i in range(1, len(s) + 1):
+                if s[:i] in wordSet and dfs(s[i:]):
+                    return True
+            return False
         
+        wordSet = set(wordDict)
         return dfs(s)
