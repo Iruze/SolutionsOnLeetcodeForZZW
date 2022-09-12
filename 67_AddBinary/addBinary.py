@@ -14,3 +14,9 @@ class Solution:
             i, j = i - 1, j - 1
         # 最高位如果有进位，需要加上carry
         return res if not carry else '1' + res
+
+    
+# 解法二： 转换为数字直接相加
+class Solution:
+    def addBinary(self, a, b) -> str:
+        return '{0:b}'.format(int(a, 2) + int(b, 2))
