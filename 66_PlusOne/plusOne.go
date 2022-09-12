@@ -17,9 +17,11 @@ func plusOne(digits []int) []int {
             return digits
         }
     }
-    // 此时digits是100,100,1000...这种数
+    /* 此时digits是100,100,1000...这种数
     digits = make([]int, n + 1)
     digits[0] = 1
+    */
+    digits = append([]int{1}, digits...)
     
     return digits
 }
